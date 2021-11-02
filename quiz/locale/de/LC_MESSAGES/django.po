@@ -1,0 +1,304 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-02 23:29+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\quiz\models.py:45
+msgid "1. What do you decide in each life period?"
+msgstr ""
+
+#: .\quiz\models.py:50
+msgid "2. What happens during retirement?"
+msgstr ""
+
+#: .\quiz\models.py:55
+msgid "3. What is the impact of the Expenses?"
+msgstr ""
+
+#: .\quiz\models.py:60
+msgid "4. When will you go into debt?"
+msgstr ""
+
+#: .\quiz\models.py:65
+msgid "5. What determines your additional compensation?"
+msgstr ""
+
+#: .\quiz\pages.py:19 .\quiz\pages.py:113
+#: .\quiz\templates\quiz\includes\tabs.html:10
+msgid "Expenses"
+msgstr ""
+
+#: .\quiz\pages.py:19 .\quiz\pages.py:113
+#: .\quiz\templates\quiz\includes\tabs.html:9
+msgid "Income"
+msgstr ""
+
+#: .\quiz\pages.py:19 .\quiz\pages.py:113
+msgid "Spending"
+msgstr ""
+
+#: .\quiz\pages.py:24 .\quiz\pages.py:118
+msgid "Expenses are zero."
+msgstr ""
+
+#: .\quiz\pages.py:24 .\quiz\pages.py:118
+msgid "Income is zero."
+msgstr ""
+
+#: .\quiz\pages.py:25 .\quiz\pages.py:119
+msgid "Spending is not allowed or possible."
+msgstr ""
+
+#: .\quiz\pages.py:31 .\quiz\pages.py:125
+msgid ""
+"Expenses are deducted from my Income or Savings, limiting my maximum Spending"
+msgstr ""
+
+#: .\quiz\pages.py:32 .\quiz\pages.py:126
+msgid "Expenses increase my Savings automatically"
+msgstr ""
+
+#: .\quiz\pages.py:33 .\quiz\pages.py:127
+msgid "Expenses are added to my Income and increase maximum Spending"
+msgstr ""
+
+#: .\quiz\pages.py:38 .\quiz\pages.py:132
+msgid "During retirement when you have less Savings than Expenses"
+msgstr ""
+
+#: .\quiz\pages.py:39 .\quiz\pages.py:133
+msgid "During employment when you have zero Expenses"
+msgstr ""
+
+#: .\quiz\pages.py:40 .\quiz\pages.py:134
+msgid "During retirement when your Spending is higher than your Income"
+msgstr ""
+
+#: .\quiz\pages.py:45 .\quiz\pages.py:139
+msgid "Savings points at the end of one life (as selected by a computer)."
+msgstr ""
+
+#: .\quiz\pages.py:46 .\quiz\pages.py:140
+msgid "Spending points in one period of one life (as selected by a computer)."
+msgstr ""
+
+#: .\quiz\pages.py:47 .\quiz\pages.py:141
+msgid "Average Expense points for all periods in all lives."
+msgstr ""
+
+#: .\quiz\pages.py:54
+msgid "Please answer all questions."
+msgstr ""
+
+#: .\quiz\pages.py:156
+msgid "Please answer the question."
+msgstr ""
+
+#: .\quiz\templates\quiz\End_attempt1.html:9
+#: .\quiz\templates\quiz\End_attempt2.html:9
+msgid "Ineligible to participate"
+msgstr ""
+
+#: .\quiz\templates\quiz\End_attempt1.html:12
+#: .\quiz\templates\quiz\End_attempt2.html:12
+msgid ""
+"Unfortunately, you did not answer all the questions of the quiz correctly.\n"
+"            The simulation requires that subjects understand its basic "
+"functions and elements,\n"
+"            as informed in the introduction page.\n"
+"            Thus, we regret to inform that you are unable to participate in "
+"the simulation."
+msgstr ""
+
+#: .\quiz\templates\quiz\End_attempt1.html:18
+#: .\quiz\templates\quiz\End_attempt2.html:18
+msgid "Finish"
+msgstr ""
+
+#: .\quiz\templates\quiz\Quiz.html:15
+msgid "Quiz"
+msgstr ""
+
+#: .\quiz\templates\quiz\Quiz.html:18
+msgid ""
+"You will now answer a short quiz of five questions about the game.\n"
+"        If you have difficulties answering the questions, consult the "
+"instructions at the bottom of the page."
+msgstr ""
+
+#: .\quiz\templates\quiz\Quiz_retry.html:15
+msgid "Quiz: try again"
+msgstr ""
+
+#: .\quiz\templates\quiz\Quiz_retry.html:17
+msgid ""
+"Please answer correctly the question(s) again, before advancing to the live "
+"round.\n"
+"        There is a hint below."
+msgstr ""
+
+#: .\quiz\templates\quiz\Quiz_retry.html:24
+msgid ""
+"Hint of question1: <br>\n"
+"        In each period, you will decide your <b>Spending</b> (in points)."
+msgstr ""
+
+#: .\quiz\templates\quiz\Quiz_retry.html:31
+msgid ""
+"Hint of question 2: <br>\n"
+"        You will always know in advance your <b>Income</b> for all periods "
+"during <b>employment</b>.\n"
+"        During <b>retirement</b> you will not work and will not have <b>any</"
+"b> working income."
+msgstr ""
+
+#: .\quiz\templates\quiz\Quiz_retry.html:39
+msgid ""
+"Hint of question 3: <br>\n"
+"        In each period, during employment and retirement,\n"
+"            you will have <b>Expenses</b> (in points) indicated as a "
+"negative number (-).\n"
+"            The <b>Expenses</b> are automatically deducted at the start of "
+"the period."
+msgstr ""
+
+#: .\quiz\templates\quiz\Quiz_retry.html:48
+msgid ""
+"Hint of question 4: <br>\n"
+"        During retirement, if your <b>Savings</b> are lower than the "
+"<b>Expenses</b>, you will go into debt.\n"
+"            Your debt will accumulate as a <b>negative</b> number in your "
+"<b>Savings</b> account."
+msgstr ""
+
+#: .\quiz\templates\quiz\Quiz_retry.html:56
+msgid ""
+"Hint of question 5: <br>\n"
+"        To determine your reward, the computer will first randomly select "
+"one of your 4 lives.\n"
+"            Then, the computer will randomly select one of the 16 periods of "
+"the selected life."
+msgstr ""
+
+#: .\quiz\templates\quiz\includes\tabs.html:8
+msgid "Instruction"
+msgstr ""
+
+#: .\quiz\templates\quiz\includes\tabs.html:11
+msgid "Spending decision"
+msgstr ""
+
+#: .\quiz\templates\quiz\includes\tabs.html:12
+msgid "Savings"
+msgstr ""
+
+#: .\quiz\templates\quiz\includes\tabs.html:13
+msgid "Your reward"
+msgstr ""
+
+#: .\quiz\templates\quiz\includes\tabs.html:17
+msgid "Please click the other tabs to check the instruction if you want."
+msgstr ""
+
+#: .\quiz\templates\quiz\includes\tabs.html:21
+msgid ""
+"During your <b>employment</b> periods, you will earn <b>Income</b> (in "
+"points),\n"
+"        signed as a positive (+) number."
+msgstr ""
+
+#: .\quiz\templates\quiz\includes\tabs.html:27
+msgid ""
+"You will always know in advance your <b>Income</b> for all periods during "
+"<b>employment</b>."
+msgstr ""
+
+#: .\quiz\templates\quiz\includes\tabs.html:29
+msgid ""
+"During <b>retirement</b> you will not work and will not have <b>any</b> "
+"working income."
+msgstr ""
+
+#: .\quiz\templates\quiz\includes\tabs.html:33
+msgid ""
+"In each period, during employment and retirement,\n"
+"        you will have <b>Expenses</b> (in points) indicated as a negative "
+"number (-).\n"
+"        The <b>Expenses</b> are automatically deducted at the start of the "
+"period."
+msgstr ""
+
+#: .\quiz\templates\quiz\includes\tabs.html:40
+msgid ""
+"The <b>Expenses</b> for each period are randomly drawn from an Expense Deck "
+"with 16 cards.\n"
+"        Once an expense card is drawn it is removed from the deck."
+msgstr ""
+
+#: .\quiz\templates\quiz\includes\tabs.html:46
+msgid ""
+"You can see expenses from the current and previous periods.\n"
+"        The <b>Expenses</b> for future periods are indicated by “?”.\n"
+"        They are only revealed at the beginning of each period."
+msgstr ""
+
+#: .\quiz\templates\quiz\includes\tabs.html:54
+msgid "In each period, you will decide your <b>Spending</b> (in points)."
+msgstr ""
+
+#: .\quiz\templates\quiz\includes\tabs.html:56
+msgid ""
+"Once you proceed to the next period,\n"
+"        you cannot go back to previous periods to change your previous "
+"spending decisions."
+msgstr ""
+
+#: .\quiz\templates\quiz\includes\tabs.html:61
+msgid ""
+"Your <b>Savings</b> account will store points that you do not spend in a "
+"period,\n"
+"        carrying them to the future periods."
+msgstr ""
+
+#: .\quiz\templates\quiz\includes\tabs.html:64
+msgid ""
+"During retirement, if your <b>Savings</b> are lower than the <b>Expenses</"
+"b>, you will go into debt.\n"
+"        Your debt will accumulate as a <b>negative</b> number in your "
+"<b>Savings</b> account."
+msgstr ""
+
+#: .\quiz\templates\quiz\includes\tabs.html:67
+msgid ""
+"Any <b>Savings</b> balance not spent at the end of a life (after period 16) "
+"will be lost.\n"
+"        They do not carry over to your next life."
+msgstr ""
+
+#: .\quiz\templates\quiz\includes\tabs.html:72
+msgid ""
+"Your Reward depends on your Spending decisions.\n"
+"        To determine your reward, the computer will first randomly select "
+"one of your 4 lives.\n"
+"        Then, the computer will randomly select one of the 16 periods of the "
+"selected life.\n"
+"        The Spending points in that period will be exchanged for Euros at a "
+"rate of <b>&euro; 1.00 = 5 points.</b>\n"
+"        However, if you have accumulated <b>any</b> debt at <b>any</b> "
+"period of that life,\n"
+"        your <b>Reward</b> will be <b>zero</b>."
+msgstr ""

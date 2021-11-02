@@ -1,0 +1,50 @@
+{% extends "instructions/Page.html" %}
+{% load otree i18n %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+
+    {% if form.errors %}
+        <div class="alert alert-danger" role="alert">
+            <h6 class="alert-heading">{{ form.non_field_errors }}</h6>
+        </div>
+    {% endif %}
+
+    <h3>
+        <br>
+        {% blocktrans %}Savings{% endblocktrans %}
+    </h3>
+
+    <p>{% blocktrans %}Your <b>Savings</b> account will store points that you do not spend in a period,
+        carrying them to the future periods.{% endblocktrans %}</p>
+
+    <p>{% blocktrans %}During retirement, if your <b>Savings</b> are lower than the <b>Expenses</b>, you will go into debt.
+        Your debt will accumulate as a <b>negative</b> number in your <b>Savings</b> account.{% endblocktrans %}</p>
+
+    <p>{% blocktrans %}Any <b>Savings</b> balance not spent at the end of a life (after period 16) will be lost.
+        They do not carry over to your next life.{% endblocktrans %}</p>
+
+    {% next_button %}
+
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="5"
+            aria-valuemin="0" aria-valuemax="100" style="width:5%">
+            <span class="sr-only">5% Complete</span>
+        </div>
+    </div>
+
+    <style>
+        .otree-title {
+            display: none;
+        }
+        .otree-form-errors {
+            visibility: hidden;
+            display: none;
+        }
+    </style>
+
+{% endblock %}
+
+

@@ -1,0 +1,145 @@
+{% load otree i18n %}
+
+<br>
+
+<div id="tab-area">
+
+<div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'Instruction')">{% blocktrans %}Instruction{% endblocktrans %}</button>
+    <button class="tablinks" onclick="openCity(event, 'Income')">{% blocktrans %}Income{% endblocktrans %}</button>
+    <button class="tablinks" onclick="openCity(event, 'Expenses')">{% blocktrans %}Expenses{% endblocktrans %}</button>
+    <button class="tablinks" onclick="openCity(event, 'Spending')">{% blocktrans %}Spending decision{% endblocktrans %}</button>
+    <button class="tablinks" onclick="openCity(event, 'Savings')">{% blocktrans %}Savings{% endblocktrans %}</button>
+    <button class="tablinks" onclick="openCity(event, 'Reward')">{% blocktrans %}Your reward{% endblocktrans %}</button>
+</div>
+
+<div id="Instruction" class="tabcontent">
+    <p>{% blocktrans %}Please click the other tabs to check the instruction if you want.{% endblocktrans %}</p>
+</div>
+
+<div id="Income" class="tabcontent">
+    <p>{% blocktrans %}During your <b>employment</b> periods, you will earn <b>Income</b> (in points),
+        signed as a positive (+) number.{% endblocktrans %}</p>
+
+    <img id="graph" width="150" height="auto" src="{% static 'fig_instruct1.png' %}"/>
+    <br></br>
+
+    <p>{% blocktrans %}You will always know in advance your <b>Income</b> for all periods during <b>employment</b>.{% endblocktrans %}</p>
+
+    <p>{% blocktrans %}During <b>retirement</b> you will not work and will not have <b>any</b> working income.{% endblocktrans %}</p>
+</div>
+
+<div id="Expenses" class="tabcontent">
+    <p>{% blocktrans %}In each period, during employment and retirement,
+        you will have <b>Expenses</b> (in points) indicated as a negative number (-).
+        The <b>Expenses</b> are automatically deducted at the start of the period.{% endblocktrans %}</p>
+
+    <img id="graph" width="110" height="auto" src="{% static 'fig_instruct2a.png' %}"/>
+    <br></br>
+
+    <p>{% blocktrans %}The <b>Expenses</b> for each period are randomly drawn from an Expense Deck with 16 cards.
+        Once an expense card is drawn it is removed from the deck.{% endblocktrans %}</p>
+
+    <img id="graph" width="100" height="auto" src="{% static 'fig_instruct2b.png' %}"/>
+    <br></br>
+
+    <p>{% blocktrans %}You can see expenses from the current and previous periods.
+        The <b>Expenses</b> for future periods are indicated by “?”.
+        They are only revealed at the beginning of each period.{% endblocktrans %}</p>
+
+    <img id="graph" width="100" height="auto" src="{% static 'fig_instruct2c.png' %}"/>
+</div>
+
+<div id="Spending" class="tabcontent">
+    <p>{% blocktrans %}In each period, you will decide your <b>Spending</b> (in points).{% endblocktrans %}</p>
+
+    <p>{% blocktrans %}Once you proceed to the next period,
+        you cannot go back to previous periods to change your previous spending decisions.{% endblocktrans %}</p>
+</div>
+
+<div id="Savings" class="tabcontent">
+    <p>{% blocktrans %}Your <b>Savings</b> account will store points that you do not spend in a period,
+        carrying them to the future periods.{% endblocktrans %}</p>
+
+    <p>{% blocktrans %}During retirement, if your <b>Savings</b> are lower than the <b>Expenses</b>, you will go into debt.
+        Your debt will accumulate as a <b>negative</b> number in your <b>Savings</b> account.{% endblocktrans %}</p>
+
+    <p>{% blocktrans %}Any <b>Savings</b> balance not spent at the end of a life (after period 16) will be lost.
+        They do not carry over to your next life.{% endblocktrans %}</p>
+</div>
+
+<div id="Reward" class="tabcontent">
+    <p>{% blocktrans %}Your Reward depends on your Spending decisions.
+        To determine your reward, the computer will first randomly select one of your 4 lives.
+        Then, the computer will randomly select one of the 16 periods of the selected life.
+        The Spending points in that period will be exchanged for Euros at a rate of <b>&euro; 1.00 = 5 points.</b>
+        However, if you have accumulated <b>any</b> debt at <b>any</b> period of that life,
+        your <b>Reward</b> will be <b>zero</b>.{% endblocktrans %}</p>
+</div>
+
+</div>
+
+<script>
+    function openCity(evt, cityName) {
+        event.preventDefault();
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    // document.getElementById("defaultOpen").click();
+</script>
+
+<style>
+    /* Style the tab */
+    #tab-area {
+        padding-left: 10px;
+    }
+
+    .tab {
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+        width: 850px;
+    }
+
+    /* Style the buttons inside the tab */
+    .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+        background-color: #ddd;
+    }
+
+    /* Create an active/current tablink class */
+    .tab button.active {
+        background-color: #ccc;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        border-top: none;
+        width: 850px;
+    }
+</style>

@@ -1,0 +1,47 @@
+{% extends "quiz/Page.html" %}
+{% load otree i18n %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+
+    {% if form.errors %}
+        <div class="alert alert-danger" role="alert">
+            <h6 class="alert-heading">{{ form.non_field_errors }}</h6>
+        </div>
+    {% endif %}
+
+    <h3><br>Quiz: try again</h3>
+
+    <p>Please answer the question again, before advancing to the live round. There is a hint below.</p>
+
+    {% formfield player.quiz5 %}
+
+    <p style="border:3px; border-style:solid; border-color: black; padding: 0.2em; border-radius: 3px">
+    Hint: <br>
+    To determine your reward, the computer will first randomly select one of your 4 lives.
+        Then, the computer will randomly select one of the 16 periods of the selected life.</p>
+
+    {% next_button %}
+
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="29"
+            aria-valuemin="0" aria-valuemax="100" style="width:26%">
+            <span class="sr-only">29% Complete</span>
+        </div>
+    </div>
+    
+    <style>
+        .otree-title {
+            display: none;
+        }
+        .otree-form-errors {
+            visibility: hidden;
+            display: none;
+        }
+    </style>
+
+{% endblock %}
+
+

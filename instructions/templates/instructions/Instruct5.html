@@ -1,0 +1,48 @@
+{% extends "instructions/Page.html" %}
+{% load otree i18n %}
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+
+    {% if form.errors %}
+        <div class="alert alert-danger" role="alert">
+            <h6 class="alert-heading">{{ form.non_field_errors }}</h6>
+        </div>
+    {% endif %}
+
+    <h3>
+        <br>
+        {% blocktrans %}Your Reward{% endblocktrans %}
+    </h3>
+
+    <p>{% blocktrans %}Your Reward depends on your Spending decisions.
+        To determine your reward, the computer will first randomly select one of your 4 lives.
+        Then, the computer will randomly select one of the 16 periods of the selected life.
+        The Spending points in that period will be exchanged for Euros at a rate of <b>&euro; 1.00 = 5 points.</b>
+        However, if you have accumulated <b>any</b> debt at <b>any</b> period of that life,
+        your <b>Reward</b> will be <b>zero</b>.{% endblocktrans %}</p>
+
+    {% next_button %}
+
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="6"
+            aria-valuemin="0" aria-valuemax="100" style="width:6%">
+            <span class="sr-only">6% Complete</span>
+        </div>
+    </div>
+
+    <style>
+        .otree-title {
+            display: none;
+        }
+        .otree-form-errors {
+            visibility: hidden;
+            display: none;
+        }
+    </style>
+
+{% endblock %}
+
+
