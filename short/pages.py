@@ -755,7 +755,7 @@ class Period13(Page):
             round_num = self.player.round_number + 2
         start_text = self.participant.vars['start_text']
         start_text_retire = self.participant.vars['start_text_retire']
-        spend_text = self.participant.vars['spend_text']
+        spend_text = str(self.participant.vars['spend_text'])
         expense_list1 = []
         expense_past = []
         spend_past = []
@@ -820,7 +820,7 @@ class Period14(Page):
         else:
             round_num = self.player.round_number + 2
         start_text = self.participant.vars['start_text']
-        spend_text = self.participant.vars['spend_text']
+        spend_text = str(self.participant.vars['spend_text'])
         expense_list1 = []
         expense_past = []
         spend_past = []
@@ -884,7 +884,7 @@ class Period15(Page):
         else:
             round_num = self.player.round_number + 2
         start_text = self.participant.vars['start_text']
-        spend_text = self.participant.vars['spend_text']
+        spend_text = str(self.participant.vars['spend_text'])
         expense_list1 = []
         expense_past = []
         spend_past = []
@@ -948,7 +948,7 @@ class Period16(Page):
         else:
             round_num = self.player.round_number + 2
         start_text = self.participant.vars['start_text']
-        spend_text = self.participant.vars['spend_text']
+        spend_text = str(self.participant.vars['spend_text'])
         expense_list1 = []
         expense_past = []
         spend_past = []

@@ -26,6 +26,7 @@ class Period1(Page):
         return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
+        lang = self.participant.vars['lang_chosen']
         start_text = self.participant.vars['start_text']
         expense_list1 = []
         expense_past = []
@@ -40,6 +41,7 @@ class Period1(Page):
             expense_list1.append('?')
         total_saving1 = self.participant.vars['total_saving1']
         return {
+            'lang': lang,
             'start_text': start_text,
             'period': period,
             'expense_past': expense_past,
@@ -67,6 +69,7 @@ class Period2(Page):
         return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
+        lang = self.participant.vars['lang_chosen']
         start_text = self.participant.vars['start_text']
         expense_list1 = []
         expense_past = []
@@ -85,6 +88,7 @@ class Period2(Page):
             spend_past.append(self.participant.vars[str_spend])
         total_saving2 = self.participant.vars['total_saving2']
         return {
+            'lang': lang,
             'start_text': start_text,
             'period': period,
             'expense_past': expense_past,
@@ -113,6 +117,7 @@ class Period3(Page):
         return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
+        lang = self.participant.vars['lang_chosen']
         start_text = self.participant.vars['start_text']
         expense_list1 = []
         expense_past = []
@@ -131,6 +136,7 @@ class Period3(Page):
             spend_past.append(self.participant.vars[str_spend])
         total_saving3 = self.participant.vars['total_saving3']
         return {
+            'lang': lang,
             'start_text': start_text,
             'period': period,
             'expense_past': expense_past,
@@ -159,6 +165,7 @@ class Period4(Page):
         return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
+        lang = self.participant.vars['lang_chosen']
         start_text = self.participant.vars['start_text']
         expense_list1 = []
         expense_past = []
@@ -177,6 +184,7 @@ class Period4(Page):
             spend_past.append(self.participant.vars[str_spend])
         total_saving4 = self.participant.vars['total_saving4']
         return {
+            'lang': lang,
             'start_text': start_text,
             'period': period,
             'expense_past': expense_past,
@@ -205,6 +213,7 @@ class Period5(Page):
         return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
+        lang = self.participant.vars['lang_chosen']
         start_text = self.participant.vars['start_text']
         expense_list1 = []
         expense_past = []
@@ -223,6 +232,7 @@ class Period5(Page):
             spend_past.append(self.participant.vars[str_spend])
         total_saving5 = self.participant.vars['total_saving5']
         return {
+            'lang': lang,
             'start_text': start_text,
             'period': period,
             'expense_past': expense_past,
@@ -251,6 +261,7 @@ class Period6(Page):
         return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
+        lang = self.participant.vars['lang_chosen']
         start_text = self.participant.vars['start_text']
         expense_list1 = []
         expense_past = []
@@ -269,6 +280,7 @@ class Period6(Page):
             spend_past.append(self.participant.vars[str_spend])
         total_saving6 = self.participant.vars['total_saving6']
         return {
+            'lang': lang,
             'start_text': start_text,
             'period': period,
             'expense_past': expense_past,
@@ -297,6 +309,7 @@ class Period7(Page):
         return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
+        lang = self.participant.vars['lang_chosen']
         start_text = self.participant.vars['start_text']
         expense_list1 = []
         expense_past = []
@@ -315,6 +328,7 @@ class Period7(Page):
             spend_past.append(self.participant.vars[str_spend])
         total_saving7 = self.participant.vars['total_saving7']
         return {
+            'lang': lang,
             'start_text': start_text,
             'period': period,
             'expense_past': expense_past,
@@ -343,6 +357,7 @@ class Period8(Page):
         return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
+        lang = self.participant.vars['lang_chosen']
         start_text = self.participant.vars['start_text']
         expense_list1 = []
         expense_past = []
@@ -361,6 +376,7 @@ class Period8(Page):
             spend_past.append(self.participant.vars[str_spend])
         total_saving8 = self.participant.vars['total_saving8']
         return {
+            'lang': lang,
             'start_text': start_text,
             'period': period,
             'expense_past': expense_past,
@@ -389,6 +405,7 @@ class Period9(Page):
         return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
+        lang = self.participant.vars['lang_chosen']
         start_text = self.participant.vars['start_text']
         expense_list1 = []
         expense_past = []
@@ -407,6 +424,7 @@ class Period9(Page):
             spend_past.append(self.participant.vars[str_spend])
         total_saving9 = self.participant.vars['total_saving9']
         return {
+            'lang': lang,
             'start_text': start_text,
             'period': period,
             'expense_past': expense_past,
@@ -435,6 +453,7 @@ class Period10(Page):
         return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
+        lang = self.participant.vars['lang_chosen']
         start_text = self.participant.vars['start_text']
         expense_list1 = []
         expense_past = []
@@ -453,6 +472,7 @@ class Period10(Page):
             spend_past.append(self.participant.vars[str_spend])
         total_saving10 = self.participant.vars['total_saving10']
         return {
+            'lang': lang,
             'start_text': start_text,
             'period': period,
             'expense_past': expense_past,
@@ -481,6 +501,7 @@ class Period11(Page):
         return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
+        lang = self.participant.vars['lang_chosen']
         start_text = self.participant.vars['start_text']
         expense_list1 = []
         expense_past = []
@@ -499,6 +520,7 @@ class Period11(Page):
             spend_past.append(self.participant.vars[str_spend])
         total_saving11 = self.participant.vars['total_saving11']
         return {
+            'lang': lang,
             'start_text': start_text,
             'period': period,
             'expense_past': expense_past,
@@ -527,6 +549,7 @@ class Period12(Page):
         return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
+        lang = self.participant.vars['lang_chosen']
         start_text = self.participant.vars['start_text']
         expense_list1 = []
         expense_past = []
@@ -545,6 +568,7 @@ class Period12(Page):
             spend_past.append(self.participant.vars[str_spend])
         total_saving12 = self.participant.vars['total_saving12']
         return {
+            'lang': lang,
             'start_text': start_text,
             'period': period,
             'expense_past': expense_past,
@@ -573,9 +597,10 @@ class Period13(Page):
         return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
+        lang = self.participant.vars['lang_chosen']
         start_text = self.participant.vars['start_text']
         start_text_retire = self.participant.vars['start_text_retire']
-        spend_text = self.participant.vars['spend_text']
+        spend_text = str(self.participant.vars['spend_text'])
         expense_list1 = []
         expense_past = []
         spend_past = []
@@ -593,6 +618,7 @@ class Period13(Page):
             spend_past.append(self.participant.vars[str_spend])
         total_saving13 = self.participant.vars['total_saving13']
         return {
+            'lang': lang,
             'start_text': start_text,
             'start_text_retire': start_text_retire,
             'spend_text': spend_text,
@@ -626,8 +652,9 @@ class Period14(Page):
         return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
+        lang = self.participant.vars['lang_chosen']
         start_text = self.participant.vars['start_text']
-        spend_text = self.participant.vars['spend_text']
+        spend_text = str(self.participant.vars['spend_text'])
         expense_list1 = []
         expense_past = []
         spend_past = []
@@ -645,6 +672,7 @@ class Period14(Page):
             spend_past.append(self.participant.vars[str_spend])
         total_saving14 = self.participant.vars['total_saving14']
         return {
+            'lang': lang,
             'start_text': start_text,
             'spend_text': spend_text,
             'period': period,
@@ -677,8 +705,9 @@ class Period15(Page):
         return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
+        lang = self.participant.vars['lang_chosen']
         start_text = self.participant.vars['start_text']
-        spend_text = self.participant.vars['spend_text']
+        spend_text = str(self.participant.vars['spend_text'])
         expense_list1 = []
         expense_past = []
         spend_past = []
@@ -696,6 +725,7 @@ class Period15(Page):
             spend_past.append(self.participant.vars[str_spend])
         total_saving15 = self.participant.vars['total_saving15']
         return {
+            'lang': lang,
             'start_text': start_text,
             'spend_text': spend_text,
             'period': period,
@@ -728,8 +758,9 @@ class Period16(Page):
         return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
+        lang = self.participant.vars['lang_chosen']
         start_text = self.participant.vars['start_text']
-        spend_text = self.participant.vars['spend_text']
+        spend_text = str(self.participant.vars['spend_text'])
         expense_list1 = []
         expense_past = []
         spend_past = []
@@ -747,6 +778,7 @@ class Period16(Page):
             spend_past.append(self.participant.vars[str_spend])
         total_saving16 = self.participant.vars['total_saving16']
         return {
+            'lang': lang,
             'start_text': start_text,
             'spend_text': spend_text,
             'period': period,

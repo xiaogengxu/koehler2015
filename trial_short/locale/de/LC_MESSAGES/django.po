@@ -7,14 +7,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 20:54+0200\n"
-"PO-Revision-Date: 2021-11-04 21:30+0200\n"
+"POT-Creation-Date: 2021-11-04 21:45+0200\n"
+"PO-Revision-Date: 2021-11-04 23:10+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Last-Translator: \n"
-"Language-Team: \n"
 "Language: de\n"
 "X-Generator: Poedit 2.4.2\n"
 
@@ -31,34 +31,12 @@ msgid "You have just entered retirement in this period."
 msgstr "Sie wurden soeben pensioniert."
 
 #: .\trial_short\models.py:41
-msgid "You have less "
-msgstr "Ihre "
-
-#: .\trial_short\models.py:41
-#: .\trial_short\templates\trial_short\includes\tabs.html:12
-msgid "Savings"
-msgstr "Ersparnisse"
-
-#: .\trial_short\models.py:42
-msgid " than you need to cover your "
-msgstr " reichen nicht aus, um Ihre Lebenshaltungskosten zu decken "
-
-#: .\trial_short\models.py:42
-#: .\trial_short\templates\trial_short\includes\tabs.html:10
-msgid "Expenses"
-msgstr "Lebenshaltungskosten"
-
-#: .\trial_short\models.py:43
-msgid " this turn. You are in debt and will not make any "
-msgstr " . Sie können somit keine "
-
-#: .\trial_short\models.py:44
-msgid "Spending"
-msgstr "Ausgaben"
-
-#: .\trial_short\models.py:44
-msgid " decision."
-msgstr " tätigen."
+msgid ""
+"You have less Savings than you need to cover your Expenses this turn. You "
+"are in debt and will not make any Spending decision."
+msgstr ""
+"Ihre Ersparnisse reichen nicht aus, um Ihre Lebenshaltungskosten zu decken. "
+"Sie können somit keine Ausgaben tätigen."
 
 #: .\trial_short\pages.py:23 .\trial_short\pages.py:64
 #: .\trial_short\pages.py:110 .\trial_short\pages.py:156
@@ -516,9 +494,17 @@ msgstr "Anweisung"
 msgid "Income"
 msgstr "Einkommen"
 
+#: .\trial_short\templates\trial_short\includes\tabs.html:10
+msgid "Expenses"
+msgstr "Lebenshaltungskosten"
+
 #: .\trial_short\templates\trial_short\includes\tabs.html:11
 msgid "Spending decision"
 msgstr "Ausgaben"
+
+#: .\trial_short\templates\trial_short\includes\tabs.html:12
+msgid "Savings"
+msgstr "Ersparnisse"
 
 #: .\trial_short\templates\trial_short\includes\tabs.html:13
 msgid "Your reward"
@@ -575,7 +561,7 @@ msgid ""
 "with 16 cards.\n"
 "        Once an expense card is drawn it is removed from the deck."
 msgstr ""
-"Die <b>Lebenshaltungskosten<b> für jede Periode werden zufällig bestimmt. "
+"Die <b>Lebenshaltungskosten</b> für jede Periode werden zufällig bestimmt. "
 "Dafür wird der Computer in jeder Periode eine Karte von einem Deck mit 16 "
 "Karten zufällig ziehen. Gezogene Karten werden vom Deck entfernt."
 
@@ -655,3 +641,18 @@ msgstr ""
 "Wechselkurs von <b>&euro; 1.00 = 14 Punkte</b> umgewandelt. Wenn Sie aber in "
 "irgendeiner Periode des gewählten Lebens Schulden haben, wird Ihre Belohnung "
 "<b>Null</b> sein."
+
+#~ msgid "You have less "
+#~ msgstr "Ihre "
+
+#~ msgid " than you need to cover your "
+#~ msgstr " reichen nicht aus, um Ihre Lebenshaltungskosten zu decken "
+
+#~ msgid " this turn. You are in debt and will not make any "
+#~ msgstr " . Sie können somit keine "
+
+#~ msgid "Spending"
+#~ msgstr "Ausgaben"
+
+#~ msgid " decision."
+#~ msgstr " tätigen."

@@ -10,7 +10,7 @@
         <style>
             #container{
                 width:1140px;
-                height:760px;
+                height:780px;
                 margin:0 0 -180px -40px;}
 
             #gamescreen{
@@ -20,27 +20,27 @@
                 padding:0 65px 0 65px;}
 
             #menu{
-                height:140px;
+                height:150px;
                 width:128px;
                 border: 2px solid black;
-                margin:-65px 0 0 70px;
+                margin:-55px 0 0 70px;
                 float:left;
                 padding:0;}
 
             #inputarea{
                 background-color:white;
-                height:140px;
+                height:150px;
                 width:600px;
                 float:left;
                 border: 2px solid black;
-                margin:-65px 0 0 5px;}
+                margin:-55px 0 0 5px;}
 
             #scorearea{
                 background-color:white;
                 height:168px;
                 width:168px;
                 float:left;
-                margin:-65px 0 0 5px;}
+                margin:-55px 0 0 5px;}
 
             .turn{
                 height:130px;
@@ -293,7 +293,13 @@
                         });
                     });
 
-                    $('#allocationLabel').text("How much of your money would you like to spend in life period "+turn+"?");
+                    var lang_chosen = {{ lang|json }};
+                    if (lang_chosen === 'en') {
+                        $('#allocationLabel').text("How much of your money would you like to spend in life period "+turn+"?");
+                    }
+                    else {
+                        $('#allocationLabel').text("Wieviel Punkte möchten Sie in Periode "+turn+" ausgeben?");
+                    }
                     $('#turn'+turn+'Container').css("border-color", "#FFCC33");
                 }
 
@@ -372,7 +378,7 @@
     {% endif %}
 
     <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        {{ start_text }} {{ period }}{% blocktrans %}.{% endblocktrans %}</p>
+        {{ start_text }} {{ period }} {% blocktrans %}.{% endblocktrans %}</p>
 
     	<div id="container">
 		<div id="gamescreen">
@@ -507,7 +513,7 @@
 		</div>
 
 		<div id="menu">
-			<h1>{% blocktrans %}Expense Deck{% endblocktrans %}</h1>
+			<h1 style="font-size: 12.5px">{% blocktrans %}Expense Deck{% endblocktrans %}</h1>
 			<div class="expenseCard" id="card1">-?</div>
 			<div class="expenseCard" id="card2">-?</div>
 			<div class="expenseCard" id="card3">-?</div>

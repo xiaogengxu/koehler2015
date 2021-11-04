@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 20:54+0200\n"
-"PO-Revision-Date: 2021-11-04 20:55+0200\n"
+"POT-Creation-Date: 2021-11-04 21:45+0200\n"
+"PO-Revision-Date: 2021-11-04 23:10+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -31,32 +31,12 @@ msgid "You have just entered retirement in this period."
 msgstr "Sie wurden soeben pensioniert."
 
 #: .\short\models.py:39
-msgid "You have less "
-msgstr "Ihre "
-
-#: .\short\models.py:39 .\short\templates\short\includes\tabs.html:12
-msgid "Savings"
-msgstr "Ersparnisse"
-
-#: .\short\models.py:40
-msgid " than you need to cover your "
-msgstr " reichen nicht aus, um Ihre Lebenshaltungskosten zu decken "
-
-#: .\short\models.py:40 .\short\templates\short\includes\tabs.html:10
-msgid "Expenses"
-msgstr "Lebenshaltungskosten"
-
-#: .\short\models.py:41
-msgid " this turn. You are in debt and will not make any "
-msgstr " . Sie können somit keine "
-
-#: .\short\models.py:42
-msgid "Spending"
-msgstr "Ausgaben"
-
-#: .\short\models.py:42
-msgid " decision."
-msgstr " tätigen."
+msgid ""
+"You have less Savings than you need to cover your Expenses this turn. You "
+"are in debt and will not make any Spending decision."
+msgstr ""
+"Ihre Ersparnisse reichen nicht aus, um Ihre Lebenshaltungskosten zu decken. "
+"Sie können somit keine Ausgaben tätigen."
 
 #: .\short\pages.py:38 .\short\pages.py:92 .\short\pages.py:151
 #: .\short\pages.py:210 .\short\pages.py:269 .\short\pages.py:328
@@ -507,9 +487,17 @@ msgstr "neu"
 msgid "Instruction"
 msgstr "Anweisung"
 
+#: .\short\templates\short\includes\tabs.html:10
+msgid "Expenses"
+msgstr "Lebenshaltungskosten"
+
 #: .\short\templates\short\includes\tabs.html:11
 msgid "Spending decision"
 msgstr "Ausgaben"
+
+#: .\short\templates\short\includes\tabs.html:12
+msgid "Savings"
+msgstr "Ersparnisse"
 
 #: .\short\templates\short\includes\tabs.html:13
 msgid "Your reward"
@@ -566,7 +554,7 @@ msgid ""
 "with 16 cards.\n"
 "        Once an expense card is drawn it is removed from the deck."
 msgstr ""
-"Die <b>Lebenshaltungskosten<b> für jede Periode werden zufällig bestimmt. "
+"Die <b>Lebenshaltungskosten</b> für jede Periode werden zufällig bestimmt. "
 "Dafür wird der Computer in jeder Periode eine Karte von einem Deck mit 16 "
 "Karten zufällig ziehen. Gezogene Karten werden vom Deck entfernt."
 
@@ -646,3 +634,18 @@ msgstr ""
 "Wechselkurs von <b>&euro; 1.00 = 14 Punkte</b> umgewandelt. Wenn Sie aber in "
 "irgendeiner Periode des gewählten Lebens Schulden haben, wird Ihre Belohnung "
 "<b>Null</b> sein."
+
+#~ msgid "You have less "
+#~ msgstr "Ihre "
+
+#~ msgid " than you need to cover your "
+#~ msgstr " reichen nicht aus, um Ihre Lebenshaltungskosten zu decken "
+
+#~ msgid " this turn. You are in debt and will not make any "
+#~ msgstr " . Sie können somit keine "
+
+#~ msgid "Spending"
+#~ msgstr "Ausgaben"
+
+#~ msgid " decision."
+#~ msgstr " tätigen."
