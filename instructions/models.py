@@ -105,6 +105,7 @@ class Player(BasePlayer):
     reward_treat = models.StringField(blank=True)
     reward_round = models.IntegerField(blank=True)
     reward_period = models.IntegerField(blank=True)
+    consent = models.StringField(blank=True)
     lang = models.StringField(
         label='Bitte wählen Sie Ihre Sprache. / Please, select your language.',
         choices=[('de', 'Deutsch'), ('en', 'English')],

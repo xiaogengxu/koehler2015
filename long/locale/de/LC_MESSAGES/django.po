@@ -3,47 +3,523 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-02 23:29+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2021-11-04 20:54+0200\n"
+"PO-Revision-Date: 2021-11-04 20:54+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: de\n"
+"X-Generator: Poedit 2.4.2\n"
+
+#: .\long\models.py:36
+msgid ""
+"Please tap and move on the slider below to indicate how much you would like "
+"to spend in current Period"
+msgstr ""
+"Bitte bewegen Sie den Schieberegler, um anzugeben wie viele Punkte Sie in "
+"der aktuellen Periode"
+
+#: .\long\models.py:38
+msgid "You have just entered retirement in this period."
+msgstr "Sie wurden soeben pensioniert."
+
+#: .\long\models.py:39
+msgid "You have less "
+msgstr "Ihre "
+
+#: .\long\models.py:39 .\long\templates\long\includes\tabs.html:12
+msgid "Savings"
+msgstr "Ersparnisse"
+
+#: .\long\models.py:40
+msgid " than you need to cover your "
+msgstr " reichen nicht aus, um Ihre Lebenshaltungskosten zu decken "
+
+#: .\long\models.py:40 .\long\templates\long\includes\tabs.html:10
+msgid "Expenses"
+msgstr "Lebenshaltungskosten"
+
+#: .\long\models.py:41
+msgid " this turn. You are in debt and will not make any "
+msgstr " . Sie können somit keine "
+
+#: .\long\models.py:42
+msgid "Spending"
+msgstr "Ausgaben"
+
+#: .\long\models.py:42
+msgid " decision."
+msgstr " tätigen."
+
+#: .\long\pages.py:39 .\long\pages.py:92 .\long\pages.py:151
+#: .\long\pages.py:210 .\long\pages.py:269 .\long\pages.py:328
+#: .\long\pages.py:387 .\long\pages.py:446 .\long\pages.py:505
+#: .\long\pages.py:571 .\long\pages.py:635 .\long\pages.py:699
+#: .\long\pages.py:763 .\long\pages.py:827 .\long\pages.py:891
+#: .\long\pages.py:955
+msgid "Please decide the amount you would like to spend."
+msgstr "Bitte entscheiden Sie, welchen Betrag Sie ausgeben möchten."
+
+#: .\long\templates\long\End_long.html:11
+msgid "Summary"
+msgstr "Zusammenfassung"
+
+#: .\long\templates\long\End_long.html:14
+#, python-format
+msgid "This is the end of life %(round_num)s."
+msgstr "Das Leben %(round_num)s endet hier."
+
+#: .\long\templates\long\Period1.html:357
+#: .\long\templates\long\Period10.html:365
+#: .\long\templates\long\Period11.html:365
+#: .\long\templates\long\Period12.html:365
+#: .\long\templates\long\Period13.html:365
+#: .\long\templates\long\Period14.html:365
+#: .\long\templates\long\Period15.html:365
+#: .\long\templates\long\Period16.html:365
+#: .\long\templates\long\Period2.html:360
+#: .\long\templates\long\Period3.html:360
+#: .\long\templates\long\Period4.html:360
+#: .\long\templates\long\Period5.html:360
+#: .\long\templates\long\Period6.html:360
+#: .\long\templates\long\Period7.html:360
+#: .\long\templates\long\Period8.html:360
+#: .\long\templates\long\Period9.html:380
+msgid "Life"
+msgstr "Leben"
+
+#: .\long\templates\long\Period1.html:357
+#: .\long\templates\long\Period10.html:365
+#: .\long\templates\long\Period11.html:365
+#: .\long\templates\long\Period12.html:365
+#: .\long\templates\long\Period13.html:365
+#: .\long\templates\long\Period14.html:365
+#: .\long\templates\long\Period15.html:365
+#: .\long\templates\long\Period16.html:365
+#: .\long\templates\long\Period2.html:360
+#: .\long\templates\long\Period3.html:360
+#: .\long\templates\long\Period4.html:360
+#: .\long\templates\long\Period5.html:360
+#: .\long\templates\long\Period6.html:360
+#: .\long\templates\long\Period7.html:360
+#: .\long\templates\long\Period8.html:360
+#: .\long\templates\long\Period9.html:380
+#: .\long\templates\long\Start_to_L.html:33
+msgid "Period"
+msgstr "Periode"
+
+#: .\long\templates\long\Period1.html:367
+#: .\long\templates\long\Period10.html:375
+#: .\long\templates\long\Period11.html:375
+#: .\long\templates\long\Period12.html:375
+#: .\long\templates\long\Period13.html:375
+#: .\long\templates\long\Period14.html:375
+#: .\long\templates\long\Period15.html:375
+#: .\long\templates\long\Period16.html:375
+#: .\long\templates\long\Period2.html:370
+#: .\long\templates\long\Period3.html:370
+#: .\long\templates\long\Period4.html:370
+#: .\long\templates\long\Period5.html:370
+#: .\long\templates\long\Period6.html:370
+#: .\long\templates\long\Period7.html:370
+#: .\long\templates\long\Period8.html:370
+#: .\long\templates\long\Period9.html:396
+msgid "."
+msgstr "ausgeben möchten."
+
+#: .\long\templates\long\Period1.html:373
+#: .\long\templates\long\Period1.html:381
+#: .\long\templates\long\Period1.html:389
+#: .\long\templates\long\Period1.html:397
+#: .\long\templates\long\Period1.html:405
+#: .\long\templates\long\Period1.html:413
+#: .\long\templates\long\Period1.html:421
+#: .\long\templates\long\Period1.html:429
+#: .\long\templates\long\Period1.html:437
+#: .\long\templates\long\Period1.html:445
+#: .\long\templates\long\Period1.html:453
+#: .\long\templates\long\Period1.html:461
+#: .\long\templates\long\Period1.html:469
+#: .\long\templates\long\Period1.html:477
+#: .\long\templates\long\Period1.html:485
+#: .\long\templates\long\Period1.html:493
+#: .\long\templates\long\Period10.html:381
+#: .\long\templates\long\Period10.html:389
+#: .\long\templates\long\Period10.html:397
+#: .\long\templates\long\Period10.html:405
+#: .\long\templates\long\Period10.html:413
+#: .\long\templates\long\Period10.html:421
+#: .\long\templates\long\Period10.html:429
+#: .\long\templates\long\Period10.html:437
+#: .\long\templates\long\Period10.html:445
+#: .\long\templates\long\Period10.html:453
+#: .\long\templates\long\Period10.html:461
+#: .\long\templates\long\Period10.html:469
+#: .\long\templates\long\Period10.html:477
+#: .\long\templates\long\Period10.html:485
+#: .\long\templates\long\Period10.html:493
+#: .\long\templates\long\Period10.html:501
+#: .\long\templates\long\Period11.html:381
+#: .\long\templates\long\Period11.html:389
+#: .\long\templates\long\Period11.html:397
+#: .\long\templates\long\Period11.html:405
+#: .\long\templates\long\Period11.html:413
+#: .\long\templates\long\Period11.html:421
+#: .\long\templates\long\Period11.html:429
+#: .\long\templates\long\Period11.html:437
+#: .\long\templates\long\Period11.html:445
+#: .\long\templates\long\Period11.html:453
+#: .\long\templates\long\Period11.html:461
+#: .\long\templates\long\Period11.html:469
+#: .\long\templates\long\Period11.html:477
+#: .\long\templates\long\Period11.html:485
+#: .\long\templates\long\Period11.html:493
+#: .\long\templates\long\Period11.html:501
+#: .\long\templates\long\Period12.html:381
+#: .\long\templates\long\Period12.html:389
+#: .\long\templates\long\Period12.html:397
+#: .\long\templates\long\Period12.html:405
+#: .\long\templates\long\Period12.html:413
+#: .\long\templates\long\Period12.html:421
+#: .\long\templates\long\Period12.html:429
+#: .\long\templates\long\Period12.html:437
+#: .\long\templates\long\Period12.html:445
+#: .\long\templates\long\Period12.html:453
+#: .\long\templates\long\Period12.html:461
+#: .\long\templates\long\Period12.html:469
+#: .\long\templates\long\Period12.html:477
+#: .\long\templates\long\Period12.html:485
+#: .\long\templates\long\Period12.html:493
+#: .\long\templates\long\Period12.html:501
+#: .\long\templates\long\Period13.html:381
+#: .\long\templates\long\Period13.html:389
+#: .\long\templates\long\Period13.html:397
+#: .\long\templates\long\Period13.html:405
+#: .\long\templates\long\Period13.html:413
+#: .\long\templates\long\Period13.html:421
+#: .\long\templates\long\Period13.html:429
+#: .\long\templates\long\Period13.html:437
+#: .\long\templates\long\Period13.html:445
+#: .\long\templates\long\Period13.html:453
+#: .\long\templates\long\Period13.html:461
+#: .\long\templates\long\Period13.html:469
+#: .\long\templates\long\Period13.html:477
+#: .\long\templates\long\Period13.html:485
+#: .\long\templates\long\Period13.html:493
+#: .\long\templates\long\Period13.html:501
+#: .\long\templates\long\Period14.html:381
+#: .\long\templates\long\Period14.html:389
+#: .\long\templates\long\Period14.html:397
+#: .\long\templates\long\Period14.html:405
+#: .\long\templates\long\Period14.html:413
+#: .\long\templates\long\Period14.html:421
+#: .\long\templates\long\Period14.html:429
+#: .\long\templates\long\Period14.html:437
+#: .\long\templates\long\Period14.html:445
+#: .\long\templates\long\Period14.html:453
+#: .\long\templates\long\Period14.html:461
+#: .\long\templates\long\Period14.html:469
+#: .\long\templates\long\Period14.html:477
+#: .\long\templates\long\Period14.html:485
+#: .\long\templates\long\Period14.html:493
+#: .\long\templates\long\Period14.html:501
+#: .\long\templates\long\Period15.html:381
+#: .\long\templates\long\Period15.html:389
+#: .\long\templates\long\Period15.html:397
+#: .\long\templates\long\Period15.html:405
+#: .\long\templates\long\Period15.html:413
+#: .\long\templates\long\Period15.html:421
+#: .\long\templates\long\Period15.html:429
+#: .\long\templates\long\Period15.html:437
+#: .\long\templates\long\Period15.html:445
+#: .\long\templates\long\Period15.html:453
+#: .\long\templates\long\Period15.html:461
+#: .\long\templates\long\Period15.html:469
+#: .\long\templates\long\Period15.html:477
+#: .\long\templates\long\Period15.html:485
+#: .\long\templates\long\Period15.html:493
+#: .\long\templates\long\Period15.html:501
+#: .\long\templates\long\Period16.html:381
+#: .\long\templates\long\Period16.html:389
+#: .\long\templates\long\Period16.html:397
+#: .\long\templates\long\Period16.html:405
+#: .\long\templates\long\Period16.html:413
+#: .\long\templates\long\Period16.html:421
+#: .\long\templates\long\Period16.html:429
+#: .\long\templates\long\Period16.html:437
+#: .\long\templates\long\Period16.html:445
+#: .\long\templates\long\Period16.html:453
+#: .\long\templates\long\Period16.html:461
+#: .\long\templates\long\Period16.html:469
+#: .\long\templates\long\Period16.html:477
+#: .\long\templates\long\Period16.html:485
+#: .\long\templates\long\Period16.html:493
+#: .\long\templates\long\Period16.html:501
+#: .\long\templates\long\Period2.html:376
+#: .\long\templates\long\Period2.html:384
+#: .\long\templates\long\Period2.html:392
+#: .\long\templates\long\Period2.html:400
+#: .\long\templates\long\Period2.html:408
+#: .\long\templates\long\Period2.html:416
+#: .\long\templates\long\Period2.html:424
+#: .\long\templates\long\Period2.html:432
+#: .\long\templates\long\Period2.html:440
+#: .\long\templates\long\Period2.html:448
+#: .\long\templates\long\Period2.html:456
+#: .\long\templates\long\Period2.html:464
+#: .\long\templates\long\Period2.html:472
+#: .\long\templates\long\Period2.html:480
+#: .\long\templates\long\Period2.html:488
+#: .\long\templates\long\Period2.html:496
+#: .\long\templates\long\Period3.html:376
+#: .\long\templates\long\Period3.html:384
+#: .\long\templates\long\Period3.html:392
+#: .\long\templates\long\Period3.html:400
+#: .\long\templates\long\Period3.html:408
+#: .\long\templates\long\Period3.html:416
+#: .\long\templates\long\Period3.html:424
+#: .\long\templates\long\Period3.html:432
+#: .\long\templates\long\Period3.html:440
+#: .\long\templates\long\Period3.html:448
+#: .\long\templates\long\Period3.html:456
+#: .\long\templates\long\Period3.html:464
+#: .\long\templates\long\Period3.html:472
+#: .\long\templates\long\Period3.html:480
+#: .\long\templates\long\Period3.html:488
+#: .\long\templates\long\Period3.html:496
+#: .\long\templates\long\Period4.html:376
+#: .\long\templates\long\Period4.html:384
+#: .\long\templates\long\Period4.html:392
+#: .\long\templates\long\Period4.html:400
+#: .\long\templates\long\Period4.html:408
+#: .\long\templates\long\Period4.html:416
+#: .\long\templates\long\Period4.html:424
+#: .\long\templates\long\Period4.html:432
+#: .\long\templates\long\Period4.html:440
+#: .\long\templates\long\Period4.html:448
+#: .\long\templates\long\Period4.html:456
+#: .\long\templates\long\Period4.html:464
+#: .\long\templates\long\Period4.html:472
+#: .\long\templates\long\Period4.html:480
+#: .\long\templates\long\Period4.html:488
+#: .\long\templates\long\Period4.html:496
+#: .\long\templates\long\Period5.html:376
+#: .\long\templates\long\Period5.html:384
+#: .\long\templates\long\Period5.html:392
+#: .\long\templates\long\Period5.html:400
+#: .\long\templates\long\Period5.html:408
+#: .\long\templates\long\Period5.html:416
+#: .\long\templates\long\Period5.html:424
+#: .\long\templates\long\Period5.html:432
+#: .\long\templates\long\Period5.html:440
+#: .\long\templates\long\Period5.html:448
+#: .\long\templates\long\Period5.html:456
+#: .\long\templates\long\Period5.html:464
+#: .\long\templates\long\Period5.html:472
+#: .\long\templates\long\Period5.html:480
+#: .\long\templates\long\Period5.html:488
+#: .\long\templates\long\Period5.html:496
+#: .\long\templates\long\Period6.html:376
+#: .\long\templates\long\Period6.html:384
+#: .\long\templates\long\Period6.html:392
+#: .\long\templates\long\Period6.html:400
+#: .\long\templates\long\Period6.html:408
+#: .\long\templates\long\Period6.html:416
+#: .\long\templates\long\Period6.html:424
+#: .\long\templates\long\Period6.html:432
+#: .\long\templates\long\Period6.html:440
+#: .\long\templates\long\Period6.html:448
+#: .\long\templates\long\Period6.html:456
+#: .\long\templates\long\Period6.html:464
+#: .\long\templates\long\Period6.html:472
+#: .\long\templates\long\Period6.html:480
+#: .\long\templates\long\Period6.html:488
+#: .\long\templates\long\Period6.html:496
+#: .\long\templates\long\Period7.html:376
+#: .\long\templates\long\Period7.html:384
+#: .\long\templates\long\Period7.html:392
+#: .\long\templates\long\Period7.html:400
+#: .\long\templates\long\Period7.html:408
+#: .\long\templates\long\Period7.html:416
+#: .\long\templates\long\Period7.html:424
+#: .\long\templates\long\Period7.html:432
+#: .\long\templates\long\Period7.html:440
+#: .\long\templates\long\Period7.html:448
+#: .\long\templates\long\Period7.html:456
+#: .\long\templates\long\Period7.html:464
+#: .\long\templates\long\Period7.html:472
+#: .\long\templates\long\Period7.html:480
+#: .\long\templates\long\Period7.html:488
+#: .\long\templates\long\Period7.html:496
+#: .\long\templates\long\Period8.html:376
+#: .\long\templates\long\Period8.html:384
+#: .\long\templates\long\Period8.html:392
+#: .\long\templates\long\Period8.html:400
+#: .\long\templates\long\Period8.html:408
+#: .\long\templates\long\Period8.html:416
+#: .\long\templates\long\Period8.html:424
+#: .\long\templates\long\Period8.html:432
+#: .\long\templates\long\Period8.html:440
+#: .\long\templates\long\Period8.html:448
+#: .\long\templates\long\Period8.html:456
+#: .\long\templates\long\Period8.html:464
+#: .\long\templates\long\Period8.html:472
+#: .\long\templates\long\Period8.html:480
+#: .\long\templates\long\Period8.html:488
+#: .\long\templates\long\Period8.html:496
+#: .\long\templates\long\Period9.html:402
+#: .\long\templates\long\Period9.html:410
+#: .\long\templates\long\Period9.html:418
+#: .\long\templates\long\Period9.html:426
+#: .\long\templates\long\Period9.html:434
+#: .\long\templates\long\Period9.html:442
+#: .\long\templates\long\Period9.html:450
+#: .\long\templates\long\Period9.html:458
+#: .\long\templates\long\Period9.html:466
+#: .\long\templates\long\Period9.html:474
+#: .\long\templates\long\Period9.html:482
+#: .\long\templates\long\Period9.html:490
+#: .\long\templates\long\Period9.html:498
+#: .\long\templates\long\Period9.html:506
+#: .\long\templates\long\Period9.html:514
+#: .\long\templates\long\Period9.html:522
+msgid "Life Period"
+msgstr "Periode"
+
+#: .\long\templates\long\Period1.html:502
+#: .\long\templates\long\Period10.html:510
+#: .\long\templates\long\Period11.html:510
+#: .\long\templates\long\Period12.html:510
+#: .\long\templates\long\Period13.html:510
+#: .\long\templates\long\Period14.html:510
+#: .\long\templates\long\Period15.html:510
+#: .\long\templates\long\Period16.html:510
+#: .\long\templates\long\Period2.html:505
+#: .\long\templates\long\Period3.html:505
+#: .\long\templates\long\Period4.html:505
+#: .\long\templates\long\Period5.html:505
+#: .\long\templates\long\Period6.html:505
+#: .\long\templates\long\Period7.html:505
+#: .\long\templates\long\Period8.html:505
+#: .\long\templates\long\Period9.html:531
+msgid "Expense Deck"
+msgstr "Mögliche Lebenshaltungskosten"
+
+#: .\long\templates\long\Period1.html:522
+#: .\long\templates\long\Period10.html:530
+#: .\long\templates\long\Period11.html:530
+#: .\long\templates\long\Period12.html:530
+#: .\long\templates\long\Period13.html:530
+#: .\long\templates\long\Period14.html:530
+#: .\long\templates\long\Period15.html:530
+#: .\long\templates\long\Period16.html:530
+#: .\long\templates\long\Period2.html:525
+#: .\long\templates\long\Period3.html:525
+#: .\long\templates\long\Period4.html:525
+#: .\long\templates\long\Period5.html:525
+#: .\long\templates\long\Period6.html:525
+#: .\long\templates\long\Period7.html:525
+#: .\long\templates\long\Period8.html:525
+#: .\long\templates\long\Period9.html:551
+msgid "Spending Decision"
+msgstr "Ausgaben"
+
+#: .\long\templates\long\Period1.html:532
+#: .\long\templates\long\Period10.html:540
+#: .\long\templates\long\Period11.html:540
+#: .\long\templates\long\Period12.html:540
+#: .\long\templates\long\Period13.html:540
+#: .\long\templates\long\Period14.html:540
+#: .\long\templates\long\Period15.html:540
+#: .\long\templates\long\Period16.html:540
+#: .\long\templates\long\Period2.html:535
+#: .\long\templates\long\Period3.html:535
+#: .\long\templates\long\Period4.html:535
+#: .\long\templates\long\Period5.html:535
+#: .\long\templates\long\Period6.html:535
+#: .\long\templates\long\Period7.html:535
+#: .\long\templates\long\Period8.html:535
+#: .\long\templates\long\Period9.html:561
+msgid "Total Savings"
+msgstr "Total Ersparnisse"
+
+#: .\long\templates\long\Period1.html:535
+#: .\long\templates\long\Period10.html:543
+#: .\long\templates\long\Period11.html:543
+#: .\long\templates\long\Period12.html:543
+#: .\long\templates\long\Period13.html:543
+#: .\long\templates\long\Period14.html:543
+#: .\long\templates\long\Period15.html:543
+#: .\long\templates\long\Period16.html:543
+#: .\long\templates\long\Period2.html:538
+#: .\long\templates\long\Period3.html:538
+#: .\long\templates\long\Period4.html:538
+#: .\long\templates\long\Period5.html:538
+#: .\long\templates\long\Period6.html:538
+#: .\long\templates\long\Period7.html:538
+#: .\long\templates\long\Period8.html:538
+#: .\long\templates\long\Period9.html:564
+#: .\long\templates\long\Start_to_L.html:90
+msgid "Next"
+msgstr "Weiter"
+
+#: .\long\templates\long\Start.html:11
+msgid "Now you start the Game."
+msgstr "Bitte beginnen Sie jetzt mit dem wirklichen Spiel."
+
+#: .\long\templates\long\Start_to_L.html:11
+msgid "Change in retirement"
+msgstr "Änderung bei der Pensionierung"
+
+#: .\long\templates\long\Start_to_L.html:15
+msgid ""
+"For the next two lives, there will be a change.\n"
+"        You will enter retirement in Period 9 (instead of Period 13 as in "
+"lives 1 and 2).\n"
+"        Your income from Period 1 to 8 will also change, according to the "
+"table below."
+msgstr ""
+"Für die nächsten zwei Leben gibt es eine Änderung. Sie werden in Periode 9 "
+"(anstatt in Periode 13 wie bisher) pensioniert. Auch Ihr Einkommen in der "
+"Arbeitsphase wird sich ändern wie die Tabelle unten zeigt."
+
+#: .\long\templates\long\Start_to_L.html:30
+#: .\long\templates\long\includes\tabs.html:9
+msgid "Income"
+msgstr "Einkommen"
+
+#: .\long\templates\long\Start_to_L.html:34
+msgid "Old income schedule"
+msgstr "bisher"
+
+#: .\long\templates\long\Start_to_L.html:35
+msgid "New income schedule"
+msgstr "neu"
 
 #: .\long\templates\long\includes\tabs.html:8
 msgid "Instruction"
-msgstr ""
-
-#: .\long\templates\long\includes\tabs.html:9
-msgid "Income"
-msgstr ""
-
-#: .\long\templates\long\includes\tabs.html:10
-msgid "Expenses"
-msgstr ""
+msgstr "Anweisung"
 
 #: .\long\templates\long\includes\tabs.html:11
 msgid "Spending decision"
-msgstr ""
-
-#: .\long\templates\long\includes\tabs.html:12
-msgid "Savings"
-msgstr ""
+msgstr "Ausgaben"
 
 #: .\long\templates\long\includes\tabs.html:13
 msgid "Your reward"
-msgstr ""
+msgstr "Ihre Belohnung"
 
 #: .\long\templates\long\includes\tabs.html:17
 msgid "Please click the other tabs to check the instruction if you want."
 msgstr ""
+"Bitte klicken Sie auf die anderen Registerkarten, um die Anweisungen zu "
+"überprüfen, wenn Sie möchten."
 
 #: .\long\templates\long\includes\tabs.html:21
 msgid ""
@@ -51,18 +527,25 @@ msgid ""
 "points),\n"
 "        signed as a positive (+) number."
 msgstr ""
+"In der <b>Arbeitsphase</b> werden Sie <b>Einkommen</b> (in Punkten) "
+"erzielen. Die Höhe des Einkommens wird in jeder Periode mittels einer "
+"positiven Zahl ausgedrückt."
 
 #: .\long\templates\long\includes\tabs.html:27
 msgid ""
 "You will always know in advance your <b>Income</b> for all periods during "
 "<b>employment</b>."
 msgstr ""
+"Ihr <b>Einkommen</b> für die <b>aktuelle und alle zukünftigen Perioden</b> "
+"wird Ihnen bekannt sein."
 
 #: .\long\templates\long\includes\tabs.html:29
 msgid ""
 "During <b>retirement</b> you will not work and will not have <b>any</b> "
 "working income."
 msgstr ""
+"Nach der <b>Pensionierung</b> werden Sie nicht mehr arbeiten und somit "
+"<b>kein</b> Einkommen haben."
 
 #: .\long\templates\long\includes\tabs.html:33
 msgid ""
@@ -72,6 +555,10 @@ msgid ""
 "        The <b>Expenses</b> are automatically deducted at the start of the "
 "period."
 msgstr ""
+"In jeder Periode (in der Arbeitsphase und nach der Pensionierung) werden Sie "
+"Lebenshaltungskosten (in Punkten) haben. Die Lebenshaltungskosten werden als "
+"eine <b>negative</b> Zahl dargestellt. Die Lebenshaltungskosten werden zu "
+"Beginn jeder Periode automatisch abgezogen."
 
 #: .\long\templates\long\includes\tabs.html:40
 msgid ""
@@ -79,6 +566,9 @@ msgid ""
 "with 16 cards.\n"
 "        Once an expense card is drawn it is removed from the deck."
 msgstr ""
+"Die <b>Lebenshaltungskosten<b> für jede Periode werden zufällig bestimmt. "
+"Dafür wird der Computer in jeder Periode eine Karte von einem Deck mit 16 "
+"Karten zufällig ziehen. Gezogene Karten werden vom Deck entfernt."
 
 #: .\long\templates\long\includes\tabs.html:46
 msgid ""
@@ -86,10 +576,16 @@ msgid ""
 "        The <b>Expenses</b> for future periods are indicated by “?”.\n"
 "        They are only revealed at the beginning of each period."
 msgstr ""
+"Sie werden die Lebenshaltungskosten in der aktuellen und in den vergangenen "
+"Perioden sehen. Die <b>Lebenshaltungskosten</b> in den darauffolgenden "
+"Perioden werden als Fragezeichen dargestellt; sie werden erst dann bekannt, "
+"wenn die jeweilige Periode beginnt."
 
 #: .\long\templates\long\includes\tabs.html:54
 msgid "In each period, you will decide your <b>Spending</b> (in points)."
 msgstr ""
+"In jeder Periode werden Sie über Ihre <b>Ausgaben</b> (in Punkten) "
+"entscheiden."
 
 #: .\long\templates\long\includes\tabs.html:56
 msgid ""
@@ -97,6 +593,8 @@ msgid ""
 "        you cannot go back to previous periods to change your previous "
 "spending decisions."
 msgstr ""
+"Sobald die nächste Periode beginnt, werden Sie die bereits gemachten "
+"Entscheidungen über Ihre Ausgaben nicht mehr rückwirkend ändern können."
 
 #: .\long\templates\long\includes\tabs.html:61
 msgid ""
@@ -104,6 +602,8 @@ msgid ""
 "period,\n"
 "        carrying them to the future periods."
 msgstr ""
+"Mit dem Einkommen, das Sie nicht ausgeben, bilden Sie Ersparnisse. Die "
+"Ersparnisse jeder Periode werden in Ihrem Sparkonto deponiert."
 
 #: .\long\templates\long\includes\tabs.html:64
 msgid ""
@@ -112,6 +612,9 @@ msgid ""
 "        Your debt will accumulate as a <b>negative</b> number in your "
 "<b>Savings</b> account."
 msgstr ""
+"Falls nach der Pensionierung Ihre Ersparnisse kleiner sind als Ihre "
+"Lebenshaltungskosten, werden Sie Schulden bilden. Die Schulden werden als "
+"eine negative Zahl in Ihrem Sparkonto dargestellt."
 
 #: .\long\templates\long\includes\tabs.html:67
 msgid ""
@@ -119,6 +622,8 @@ msgid ""
 "will be lost.\n"
 "        They do not carry over to your next life."
 msgstr ""
+"Ersparnisse, welche bis zum Ende des Lebens nicht ausgegeben werden, gehen "
+"verloren. Sie werden nicht ins nächste Leben übertragen."
 
 #: .\long\templates\long\includes\tabs.html:72
 msgid ""
@@ -128,8 +633,16 @@ msgid ""
 "        Then, the computer will randomly select one of the 16 periods of the "
 "selected life.\n"
 "        The Spending points in that period will be exchanged for Euros at a "
-"rate of <b>&euro; 1.00 = 5 points.</b>\n"
+"rate of <b>&euro; 1.00 = 14 points.</b>\n"
 "        However, if you have accumulated <b>any</b> debt at <b>any</b> "
 "period of that life,\n"
 "        your <b>Reward</b> will be <b>zero</b>."
 msgstr ""
+"Ihre <b>Belohnung</b> hängt von Ihren Entscheidungen bzgl. Ihrer "
+"<b>Ausgaben</b> ab. Um Ihre <b>Belohnung</b> zu bestimmen wird der Computer "
+"zuerst zufällig eines von Ihren 4 Leben auswählen. Dann wird der Computer "
+"zufällig eine von den 16 Perioden des gewählten Lebens bestimmen. Ihre "
+"Ausgaben (in Punkten) in dieser Periode werden in Euros mit einem "
+"Wechselkurs von <b>&euro; 1.00 = 14 Punkte</b> umgewandelt. Wenn Sie aber in "
+"irgendeiner Periode des gewählten Lebens Schulden haben, wird Ihre Belohnung "
+"<b>Null</b> sein."

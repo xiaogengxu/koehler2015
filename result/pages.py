@@ -15,8 +15,8 @@ class Result(Page):
     form_model = 'player'
 
     def is_displayed(self):
-        if self.participant.vars['time_instruction'] >= 60 and self.participant.vars['end'] == 0 and \
-                get_timeout_seconds(self.player) > 3:
+        if self.participant.vars['time_instruction'] >= 30 and self.participant.vars['end'] == 0 and \
+                 get_timeout_seconds(self.player) > 3 and self.participant.vars['consent'] == 'yes':
             return self.participant.vars['time_choice'] != 'delay0'
         else:
             return False
@@ -25,7 +25,7 @@ class Result(Page):
         reward_life = self.participant.vars['reward_life']
         reward_period = self.participant.vars['reward_period']
         reward = self.participant.vars['reward']
-        reward_euro = round(reward / 5, 2)
+        reward_euro = round(reward / 14, 2)
         risk_choice = self.participant.vars['risk_choice']
         invest_num = reward_euro * self.participant.vars['risk_choice']
 
@@ -92,8 +92,8 @@ class Result_nodelay(Page):
     form_model = 'player'
 
     def is_displayed(self):
-        if self.participant.vars['time_instruction'] >= 60 and self.participant.vars['end'] == 0 and \
-                get_timeout_seconds(self.player) > 3:
+        if self.participant.vars['time_instruction'] >= 30 and self.participant.vars['end'] == 0 and \
+                 get_timeout_seconds(self.player) > 3 and self.participant.vars['consent'] == 'yes':
             return self.participant.vars['time_choice'] == 'delay0'
         else:
             return False
@@ -102,7 +102,7 @@ class Result_nodelay(Page):
         reward_life = self.participant.vars['reward_life']
         reward_period = self.participant.vars['reward_period']
         reward = self.participant.vars['reward']
-        reward_euro = round(reward / 5, 2)
+        reward_euro = round(reward / 14, 2)
         risk_choice = self.participant.vars['risk_choice']
         invest_num = reward_euro * self.participant.vars['risk_choice']
 
@@ -152,8 +152,8 @@ class Timeout(Page):
     form_model = 'player'
 
     def is_displayed(self):
-        return self.participant.vars['time_instruction'] >= 60 and self.participant.vars['end'] == 0 and \
-               self.participant.vars['finished'] == ''
+        return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['end'] == 0 and \
+               self.participant.vars['finished'] == '' and self.participant.vars['consent'] == 'yes'
 
     def js_vars(self):
         username_value = self.participant.label

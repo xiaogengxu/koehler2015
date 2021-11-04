@@ -8,13 +8,13 @@
 
     <h3>
     <br>
-        Change in retirement
+        {% blocktrans %}Change in retirement{% endblocktrans %}
     </h3>
 
     <p>
-        For the next two lives, there will be a change in retirement.
+        {% blocktrans %}For the next two lives, there will be a change in retirement.
         You will enter retirement in Period 13 (instead of Period 9 as in lives 1 and 2).
-        Your income from Period 1 to 12 will also change, according to the table below.
+        Your income from Period 1 to 12 will also change, according to the table below.{% endblocktrans %}
     </p>
 
         <table id="info_table" style="width: 33%">
@@ -27,12 +27,12 @@
     <!-- Put <thead>, <tbody>, and <tr>'s here! -->
         <tbody>
             <tr>
-                <th></th> <th colspan="2">Income</th>
+                <th></th> <th colspan="2">{% blocktrans %}Income{% endblocktrans %}</th>
             </tr>
             <tr>
-                <th>Period</th>
-                <th>Old income schedule</th>
-                <th>New income schedule</th>
+                <th>{% blocktrans %}Period{% endblocktrans %}</th>
+                <th>{% blocktrans %}Old income schedule{% endblocktrans %}</th>
+                <th>{% blocktrans %}New income schedule{% endblocktrans %}</th>
             </tr>
             <tr>
                 <td>1</td> <td>80</td> <td>80</td>
@@ -87,7 +87,7 @@
 
     <br>
 
-    <button class="otree-btn-next btn btn-primary" id="btn1">Next</button>
+    <button class="otree-btn-next btn btn-primary" id="btn1">{% blocktrans %}Next{% endblocktrans %}</button>
 
     <br></br>
     <div class="progress">

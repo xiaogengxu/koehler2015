@@ -13,7 +13,7 @@ class Quiz(Page):
     form_fields = ['quiz1', 'quiz2', 'quiz3', 'quiz4', 'quiz5']
 
     def is_displayed(self):
-        return self.participant.vars['time_instruction'] >= 60
+        return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['consent'] == 'yes'
 
     def quiz1_choices(player):
         choices = [['expenses', _('Expenses')], ['income', _('Income')], ['spending', _('Spending')]]
@@ -79,7 +79,7 @@ class End_attempt1(Page):
     def is_displayed(self):
         sum_mistake = self.participant.vars['mis_q1']+self.participant.vars['mis_q2']+self.participant.vars['mis_q3']\
                       + self.participant.vars['mis_q4']+self.participant.vars['mis_q5']
-        return sum_mistake > 2 and self.participant.vars['time_instruction'] >= 60
+        return sum_mistake > 2 and self.participant.vars['time_instruction'] >= 30 and self.participant.vars['consent'] == 'yes'
 
     def js_vars(self):
         username_value = self.participant.label
@@ -145,7 +145,7 @@ class Quiz_retry(Page):
     def is_displayed(self):
         sum_mistake = self.participant.vars['mis_q1']+self.participant.vars['mis_q2']+self.participant.vars['mis_q3']\
             + self.participant.vars['mis_q4']+self.participant.vars['mis_q5']
-        return sum_mistake < 3 and self.participant.vars['time_instruction'] >= 60
+        return sum_mistake != 0 and sum_mistake < 3 and self.participant.vars['time_instruction'] >= 30 and self.participant.vars['consent'] == 'yes'
 
     def error_message(self, values):
         if (self.participant.vars['mis_q1'] == 1 and not values['quiz1']) or \
@@ -223,7 +223,7 @@ class End_attempt2(Page):
     def is_displayed(self):
         sum_mistake = self.participant.vars['mis_q1']+self.participant.vars['mis_q2']+self.participant.vars['mis_q3']\
                       + self.participant.vars['mis_q4']+self.participant.vars['mis_q5']
-        return sum_mistake != 0 and self.participant.vars['time_instruction'] >= 60
+        return sum_mistake != 0 and self.participant.vars['time_instruction'] >= 30 and self.participant.vars['consent'] == 'yes'
 
     def js_vars(self):
         username_value = self.participant.label

@@ -16,8 +16,8 @@ class Info(Page):
     form_fields = ['birth_year', 'gender', 'education', 'finance_ability', 'income']
 
     def is_displayed(self):
-        return self.participant.vars['time_instruction'] >= 60 and self.participant.vars['end'] == 0 and \
-               get_timeout_seconds(self.player) > 3
+        return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['end'] == 0 and \
+                get_timeout_seconds(self.player) > 3 and self.participant.vars['consent'] == 'yes'
 
     def error_message(self, values):
         if not values['birth_year'] or not values['gender'] or not values['education'] or not values['finance_ability'] \
@@ -34,8 +34,8 @@ class Risk_pref(Page):
     form_fields = ['risk_choice', 'check_risk_choice']
 
     def is_displayed(self):
-        return self.participant.vars['time_instruction'] >= 60 and self.participant.vars['end'] == 0 and \
-               get_timeout_seconds(self.player) > 3
+        return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['end'] == 0 and \
+                get_timeout_seconds(self.player) > 3 and self.participant.vars['consent'] == 'yes'
 
     def error_message(self, values):
         if not values['check_risk_choice']:
@@ -55,8 +55,8 @@ class Time_pref(Page):
     form_fields = ['time_choice']
 
     def is_displayed(self):
-        return self.participant.vars['time_instruction'] >= 60 and self.participant.vars['end'] == 0 and \
-               get_timeout_seconds(self.player) > 3
+        return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['end'] == 0 and \
+                get_timeout_seconds(self.player) > 3 and self.participant.vars['consent'] == 'yes'
 
     def error_message(self, values):
         if not values['time_choice']:

@@ -36,7 +36,15 @@
     <p>{% blocktrans %}The simulation must be completed <b>without long interruptions</b>.
         Please, only start the simulation if you have enough time.{% endblocktrans %}</p>
 
-    {% next_button %}
+    <p>{% blocktrans %}Do you want to start the simulation?{% endblocktrans %}</p>
+    &nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" id="consent1" name="consent" value="yes">
+    <label for="consent1">{% blocktrans %}Yes{% endblocktrans %}</label><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" id="consent2" name="consent" value="no">
+    <label for="consent2">{% blocktrans %}No{% endblocktrans %}</label><br>
+
+    <br>
+    <button class="otree-btn-next btn btn-primary" id="btn1" onclick="NewTab()">{% blocktrans %}Next{% endblocktrans %}</button>
+    <br></br>
 
     <div class="progress">
         <div class="progress-bar" role="progressbar" aria-valuenow="100"
@@ -44,6 +52,14 @@
             <span class="sr-only">100% Complete</span>
         </div>
     </div>
+
+    <script>
+        function NewTab() {
+            if (document.getElementById('consent2').checked) {
+                window.open(js_vars.url, "_blank");
+            }
+        }
+    </script>
 
     <style>
         .otree-title {

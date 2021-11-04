@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-02 23:29+0200\n"
-"PO-Revision-Date: 2021-09-16 17:16+0300\n"
+"POT-Creation-Date: 2021-11-04 20:54+0200\n"
+"PO-Revision-Date: 2021-11-04 11:42+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -17,6 +17,35 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Language: de\n"
 "X-Generator: Poedit 2.4.2\n"
+
+#: .\instructions\pages.py:27
+msgid "Please answer the question."
+msgstr "Bitte beantworten Sie die Frage."
+
+#: .\instructions\templates\instructions\End_instruct.html:17
+msgid "Ineligible to participate"
+msgstr "Teilnahmeausschluss"
+
+#: .\instructions\templates\instructions\End_instruct.html:20
+msgid ""
+"You advanced through the Instruction screens faster than a skilled reader "
+"would take to read them carefully.\n"
+"        Participants must pay attention and understand the Instructions in "
+"order to participate."
+msgstr ""
+"Wir danken Ihnen für Ihre Teilnahme. Leider brauchten Sie für die Aufgaben "
+"weniger Zeit als ein geübter Leser brauchen würde, um die Aufgaben "
+"sorgfältig zu lesen."
+
+#: .\instructions\templates\instructions\End_instruct.html:23
+msgid "Therefore, we regret to inform that you are unable to continue."
+msgstr ""
+"Wir bedauern, dass wir Sie deshalb leider ausschließen müssen und Sie nicht "
+"weiterspielen können."
+
+#: .\instructions\templates\instructions\End_instruct.html:25
+msgid "Finish"
+msgstr "Fertig"
 
 #: .\instructions\templates\instructions\Instruct0.html:17
 msgid "The Game of Life"
@@ -27,6 +56,9 @@ msgid ""
 "In this game, you will make financial decisions during a simulated life.\n"
 "        Each life consists of 16 periods. You will have four lives."
 msgstr ""
+"In diesem Spiel werden Sie während eines simulierten Lebens finanzielle "
+"Entscheidungen treffen. Jedes Leben wird aus 16 Perioden bestehen. Sie "
+"werden insgesamt vier Leben haben."
 
 #: .\instructions\templates\instructions\Instruct0.html:23
 msgid ""
@@ -37,10 +69,16 @@ msgid ""
 "        you must decide how much to save when in the first part of your life "
 "while you earn income."
 msgstr ""
+"In einem Teil Ihres Lebens (Arbeitsleben), werden Sie ein Einkommen "
+"erzielen. Im restlichen Teil Ihres Lebens werden Sie pensioniert sein und "
+"kein Einkommen erzielen. Sie werden aber sowohl in Ihrem Arbeitsleben als "
+"auch nach Ihrer Pensionierung Lebenshaltungskosten haben. Um die "
+"Lebenshaltungskosten nach der Pensionierung zu decken, müssen Sie während "
+"Ihres Arbeitslebens einen Teil Ihres Einkommens sparen."
 
 #: .\instructions\templates\instructions\Instruct1.html:17
 msgid "Income"
-msgstr ""
+msgstr "Einkommen"
 
 #: .\instructions\templates\instructions\Instruct1.html:20
 msgid ""
@@ -48,22 +86,29 @@ msgid ""
 "points),\n"
 "        signed as a positive (+) number."
 msgstr ""
+"In der <b>Arbeitsphase</b> werden Sie <b>Einkommen</b> (in Punkten) "
+"erzielen. Die Höhe des Einkommens wird in jeder Periode mittels einer "
+"positiven Zahl ausgedrückt."
 
 #: .\instructions\templates\instructions\Instruct1.html:26
 msgid ""
 "You will always know in advance your <b>Income</b> for all periods during "
 "<b>employment</b>."
 msgstr ""
+"Ihr <b>Einkommen</b> für die <b>aktuelle und alle zukünftigen Perioden</b> "
+"wird Ihnen bekannt sein."
 
 #: .\instructions\templates\instructions\Instruct1.html:28
 msgid ""
 "During <b>retirement</b> you will not work and will not have <b>any</b> "
 "working income."
 msgstr ""
+"Nach der <b>Pensionierung</b> werden Sie nicht mehr arbeiten und somit "
+"<b>kein</b> Einkommen haben."
 
 #: .\instructions\templates\instructions\Instruct2.html:17
 msgid "Expenses"
-msgstr ""
+msgstr "Lebenshaltungskosten"
 
 #: .\instructions\templates\instructions\Instruct2.html:20
 msgid ""
@@ -73,6 +118,10 @@ msgid ""
 "        The <b>Expenses</b> are automatically deducted at the start of the "
 "period."
 msgstr ""
+"In jeder Periode (in der Arbeitsphase und nach der Pensionierung) werden Sie "
+"Lebenshaltungskosten (in Punkten) haben. Die Lebenshaltungskosten werden als "
+"eine <b>negative</b> Zahl dargestellt. Die Lebenshaltungskosten werden zu "
+"Beginn jeder Periode automatisch abgezogen."
 
 #: .\instructions\templates\instructions\Instruct2.html:27
 msgid ""
@@ -80,6 +129,9 @@ msgid ""
 "with 16 cards.\n"
 "        Once an expense card is drawn it is removed from the deck."
 msgstr ""
+"Die <b>Lebenshaltungskosten<b> für jede Periode werden zufällig bestimmt. "
+"Dafür wird der Computer in jeder Periode eine Karte von einem Deck mit 16 "
+"Karten zufällig ziehen. Gezogene Karten werden vom Deck entfernt."
 
 #: .\instructions\templates\instructions\Instruct2.html:33
 msgid ""
@@ -87,14 +139,20 @@ msgid ""
 "        The <b>Expenses</b> for future periods are indicated by “?”.\n"
 "        They are only revealed at the beginning of each period."
 msgstr ""
+"Sie werden die Lebenshaltungskosten in der aktuellen und in den vergangenen "
+"Perioden sehen. Die <b>Lebenshaltungskosten</b> in den darauffolgenden "
+"Perioden werden als Fragezeichen dargestellt; sie werden erst dann bekannt, "
+"wenn die jeweilige Periode beginnt."
 
 #: .\instructions\templates\instructions\Instruct3.html:17
 msgid "Spending Decision"
-msgstr ""
+msgstr "Ausgaben"
 
 #: .\instructions\templates\instructions\Instruct3.html:20
 msgid "In each period, you will decide your <b>Spending</b> (in points)."
 msgstr ""
+"In jeder Periode werden Sie über Ihre <b>Ausgaben</b> (in Punkten) "
+"entscheiden."
 
 #: .\instructions\templates\instructions\Instruct3.html:22
 msgid ""
@@ -102,10 +160,12 @@ msgid ""
 "        you cannot go back to previous periods to change your previous "
 "spending decisions."
 msgstr ""
+"Sobald die nächste Periode beginnt, werden Sie die bereits gemachten "
+"Entscheidungen über Ihre Ausgaben nicht mehr rückwirkend ändern können."
 
 #: .\instructions\templates\instructions\Instruct4.html:17
 msgid "Savings"
-msgstr ""
+msgstr "Ersparnisse"
 
 #: .\instructions\templates\instructions\Instruct4.html:20
 msgid ""
@@ -113,6 +173,8 @@ msgid ""
 "period,\n"
 "        carrying them to the future periods."
 msgstr ""
+"Mit dem Einkommen, das Sie nicht ausgeben, bilden Sie Ersparnisse. Die "
+"Ersparnisse jeder Periode werden in Ihrem Sparkonto deponiert."
 
 #: .\instructions\templates\instructions\Instruct4.html:23
 msgid ""
@@ -121,6 +183,9 @@ msgid ""
 "        Your debt will accumulate as a <b>negative</b> number in your "
 "<b>Savings</b> account."
 msgstr ""
+"Falls nach der Pensionierung Ihre Ersparnisse kleiner sind als Ihre "
+"Lebenshaltungskosten, werden Sie Schulden bilden. Die Schulden werden als "
+"eine negative Zahl in Ihrem Sparkonto dargestellt."
 
 #: .\instructions\templates\instructions\Instruct4.html:26
 msgid ""
@@ -128,10 +193,12 @@ msgid ""
 "will be lost.\n"
 "        They do not carry over to your next life."
 msgstr ""
+"Ersparnisse, welche bis zum Ende des Lebens nicht ausgegeben werden, gehen "
+"verloren. Sie werden nicht ins nächste Leben übertragen."
 
 #: .\instructions\templates\instructions\Instruct5.html:17
 msgid "Your Reward"
-msgstr ""
+msgstr "Ihre Belohnung"
 
 #: .\instructions\templates\instructions\Instruct5.html:20
 msgid ""
@@ -141,15 +208,23 @@ msgid ""
 "        Then, the computer will randomly select one of the 16 periods of the "
 "selected life.\n"
 "        The Spending points in that period will be exchanged for Euros at a "
-"rate of <b>&euro; 1.00 = 5 points.</b>\n"
+"rate of <b>&euro; 1.00 = 14 points.</b>\n"
 "        However, if you have accumulated <b>any</b> debt at <b>any</b> "
 "period of that life,\n"
 "        your <b>Reward</b> will be <b>zero</b>."
 msgstr ""
+"Ihre <b>Belohnung</b> hängt von Ihren Entscheidungen bzgl. Ihrer "
+"<b>Ausgaben</b> ab. Um Ihre <b>Belohnung</b> zu bestimmen wird der Computer "
+"zuerst zufällig eines von Ihren 4 Leben auswählen. Dann wird der Computer "
+"zufällig eine von den 16 Perioden des gewählten Lebens bestimmen. Ihre "
+"Ausgaben (in Punkten) in dieser Periode werden in Euros mit einem "
+"Wechselkurs von <b>&euro; 1.00 = 14 Punkte</b> umgewandelt. Wenn Sie aber in "
+"irgendeiner Periode des gewählten Lebens Schulden haben, wird Ihre Belohnung "
+"<b>Null</b> sein."
 
 #: .\instructions\templates\instructions\Intro.html:19
 msgid "Welcome!"
-msgstr ""
+msgstr "Willkommen!"
 
 #: .\instructions\templates\instructions\Intro.html:21
 msgid ""
@@ -157,6 +232,8 @@ msgid ""
 "        you will participate in a <b>simulation</b> where you will be asked "
 "to make <b>financial decisions</b>."
 msgstr ""
+"In dieser Studie werden Sie im Rahmen einer <b>Simulation</b> verschiedene "
+"<b>finanzielle Entscheidungen</b> treffen."
 
 #: .\instructions\templates\instructions\Intro.html:24
 msgid ""
@@ -165,6 +242,10 @@ msgid ""
 "EUR 10 and EUR 23 on average.\n"
 "        Higher or lower amounts are also possible."
 msgstr ""
+"Je nachdem wie Sie sich entscheiden, werden Sie <b>zusätzlich</b> zu Ihrer "
+"Grundvergütung eine <b>Belohnung</b> bekommen können. Diese zusätzliche "
+"Belohnung ist in den meisten Fällen zwischen <b>EUR 10</b> und <b>EUR 23</"
+"b>. Höhere bzw. tiefe Beträge sind aber auch möglich."
 
 #: .\instructions\templates\instructions\Intro.html:28
 msgid ""
@@ -175,15 +256,42 @@ msgid ""
 "        you will be asked to correctly answer a <b>quiz</b> on the "
 "simulation's rules."
 msgstr ""
+"Um Ihre finanzielle Entschädigung für diese Studie zu maximieren, bitten wir "
+"Sie zuerst die <b>Instruktionen</b> aufmerksam zu lesen. Danach werden Sie "
+"an einer <b>Proberunde</b> teilnehmen. Bevor Sie die reale Simulation "
+"beginnen, werden Sie ein Paar <b>Testfragen</b> zu den Regeln der Simulation "
+"beantworten."
 
 #: .\instructions\templates\instructions\Intro.html:33
 msgid ""
 "Only participants <b>correctly</b> answering the quiz questions will be\n"
 "        admitted to the real simulation and earn compensation."
 msgstr ""
+"<b>Nur</b> Teilenehmende, die diese Fragen <b>korrekt</b> beantworten, "
+"werden zu der realen Simulation zugelassen."
 
 #: .\instructions\templates\instructions\Intro.html:36
 msgid ""
 "The simulation must be completed <b>without long interruptions</b>.\n"
 "        Please, only start the simulation if you have enough time."
 msgstr ""
+"Falls Sie zu der realen Simulation zugelassen werden, müssen Sie Ihre "
+"Entscheidungen <b>ohne</b> große zeitliche Unterbrüche treffen. Wir bitten "
+"Sie die Simulation nur dann zu starten, wenn Sie genügend Zeit haben diese "
+"abzuschließen."
+
+#: .\instructions\templates\instructions\Intro.html:39
+msgid "Do you want to start the simulation?"
+msgstr "Möchten Sie die Simulation jetzt starten?"
+
+#: .\instructions\templates\instructions\Intro.html:41
+msgid "Yes"
+msgstr "Ja"
+
+#: .\instructions\templates\instructions\Intro.html:43
+msgid "No"
+msgstr "Nein"
+
+#: .\instructions\templates\instructions\Intro.html:46
+msgid "Next"
+msgstr "Weiter"

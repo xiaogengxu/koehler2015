@@ -11,7 +11,7 @@ class Start(Page):
     form_model = 'player'
 
     def is_displayed(self):
-        return self.participant.vars['time_instruction'] >= 60
+        return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['consent'] == 'yes'
 
 
 class Period1(Page):
@@ -20,10 +20,10 @@ class Period1(Page):
 
     def error_message(self, values):
         if not values['check_spend1']:
-            return 'Please decide the amount you would like to spend.'
+            return _('Please decide the amount you would like to spend.')
 
     def is_displayed(self):
-        return self.participant.vars['time_instruction'] >= 60
+        return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
         start_text = self.participant.vars['start_text']
@@ -61,10 +61,10 @@ class Period2(Page):
 
     def error_message(self, values):
         if not values['check_spend2']:
-            return 'Please decide the amount you would like to spend.'
+            return _('Please decide the amount you would like to spend.')
 
     def is_displayed(self):
-        return self.participant.vars['time_instruction'] >= 60
+        return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
         start_text = self.participant.vars['start_text']
@@ -107,10 +107,10 @@ class Period3(Page):
 
     def error_message(self, values):
         if not values['check_spend3']:
-            return 'Please decide the amount you would like to spend.'
+            return _('Please decide the amount you would like to spend.')
 
     def is_displayed(self):
-        return self.participant.vars['time_instruction'] >= 60
+        return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
         start_text = self.participant.vars['start_text']
@@ -153,10 +153,10 @@ class Period4(Page):
 
     def error_message(self, values):
         if not values['check_spend4']:
-            return 'Please decide the amount you would like to spend.'
+            return _('Please decide the amount you would like to spend.')
 
     def is_displayed(self):
-        return self.participant.vars['time_instruction'] >= 60
+        return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
         start_text = self.participant.vars['start_text']
@@ -199,10 +199,10 @@ class Period5(Page):
 
     def error_message(self, values):
         if not values['check_spend5']:
-            return 'Please decide the amount you would like to spend.'
+            return _('Please decide the amount you would like to spend.')
 
     def is_displayed(self):
-        return self.participant.vars['time_instruction'] >= 60
+        return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
         start_text = self.participant.vars['start_text']
@@ -245,10 +245,10 @@ class Period6(Page):
 
     def error_message(self, values):
         if not values['check_spend6']:
-            return 'Please decide the amount you would like to spend.'
+            return _('Please decide the amount you would like to spend.')
 
     def is_displayed(self):
-        return self.participant.vars['time_instruction'] >= 60
+        return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
         start_text = self.participant.vars['start_text']
@@ -291,10 +291,10 @@ class Period7(Page):
 
     def error_message(self, values):
         if not values['check_spend7']:
-            return 'Please decide the amount you would like to spend.'
+            return _('Please decide the amount you would like to spend.')
 
     def is_displayed(self):
-        return self.participant.vars['time_instruction'] >= 60
+        return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
         start_text = self.participant.vars['start_text']
@@ -337,10 +337,10 @@ class Period8(Page):
 
     def error_message(self, values):
         if not values['check_spend8']:
-            return 'Please decide the amount you would like to spend.'
+            return _('Please decide the amount you would like to spend.')
 
     def is_displayed(self):
-        return self.participant.vars['time_instruction'] >= 60
+        return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
         start_text = self.participant.vars['start_text']
@@ -383,10 +383,10 @@ class Period9(Page):
 
     def error_message(self, values):
         if not values['check_spend9']:
-            return 'Please decide the amount you would like to spend.'
+            return _('Please decide the amount you would like to spend.')
 
     def is_displayed(self):
-        return self.participant.vars['time_instruction'] >= 60
+        return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
         start_text = self.participant.vars['start_text']
@@ -429,10 +429,10 @@ class Period10(Page):
 
     def error_message(self, values):
         if not values['check_spend10']:
-            return 'Please decide the amount you would like to spend.'
+            return _('Please decide the amount you would like to spend.')
 
     def is_displayed(self):
-        return self.participant.vars['time_instruction'] >= 60
+        return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
         start_text = self.participant.vars['start_text']
@@ -475,10 +475,10 @@ class Period11(Page):
 
     def error_message(self, values):
         if not values['check_spend11']:
-            return 'Please decide the amount you would like to spend.'
+            return _('Please decide the amount you would like to spend.')
 
     def is_displayed(self):
-        return self.participant.vars['time_instruction'] >= 60
+        return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
         start_text = self.participant.vars['start_text']
@@ -521,10 +521,10 @@ class Period12(Page):
 
     def error_message(self, values):
         if not values['check_spend12']:
-            return 'Please decide the amount you would like to spend.'
+            return _('Please decide the amount you would like to spend.')
 
     def is_displayed(self):
-        return self.participant.vars['time_instruction'] >= 60
+        return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
         start_text = self.participant.vars['start_text']
@@ -567,10 +567,10 @@ class Period13(Page):
 
     def error_message(self, values):
         if not values['check_spend13']:
-            return 'Please decide the amount you would like to spend.'
+            return _('Please decide the amount you would like to spend.')
 
     def is_displayed(self):
-        return self.participant.vars['time_instruction'] >= 60
+        return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
         start_text = self.participant.vars['start_text']
@@ -620,10 +620,10 @@ class Period14(Page):
 
     def error_message(self, values):
         if not values['check_spend14']:
-            return 'Please decide the amount you would like to spend.'
+            return _('Please decide the amount you would like to spend.')
 
     def is_displayed(self):
-        return self.participant.vars['time_instruction'] >= 60
+        return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
         start_text = self.participant.vars['start_text']
@@ -671,10 +671,10 @@ class Period15(Page):
 
     def error_message(self, values):
         if not values['check_spend15']:
-            return 'Please decide the amount you would like to spend.'
+            return _('Please decide the amount you would like to spend.')
 
     def is_displayed(self):
-        return self.participant.vars['time_instruction'] >= 60
+        return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
         start_text = self.participant.vars['start_text']
@@ -722,10 +722,10 @@ class Period16(Page):
 
     def error_message(self, values):
         if not values['check_spend16']:
-            return 'Please decide the amount you would like to spend.'
+            return _('Please decide the amount you would like to spend.')
 
     def is_displayed(self):
-        return self.participant.vars['time_instruction'] >= 60
+        return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
         start_text = self.participant.vars['start_text']
@@ -757,12 +757,19 @@ class Period16(Page):
         }
 
 
-class End_trial(Page):
+class Summary(Page):
     form_model = 'player'
 
     def is_displayed(self):
-        return self.participant.vars['time_instruction'] >= 60
+        return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['consent'] == 'yes'
+
+
+class End(Page):
+    form_model = 'player'
+
+    def is_displayed(self):
+        return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['consent'] == 'yes'
 
 
 page_sequence = [Start, Period1, Period2, Period3, Period4, Period5, Period6, Period7, Period8, Period9, Period10,
-                 Period11, Period12, Period13, Period14, Period15, Period16, End_trial]
+                 Period11, Period12, Period13, Period14, Period15, Period16, Summary, End]

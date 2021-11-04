@@ -3,47 +3,532 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-02 23:29+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2021-11-04 20:54+0200\n"
+"PO-Revision-Date: 2021-11-04 21:30+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
+"X-Generator: Poedit 2.4.2\n"
+
+#: .\trial_short\models.py:38
+msgid ""
+"Please tap and move on the slider below to indicate how much you would like "
+"to spend in current Period"
+msgstr ""
+"Bitte bewegen Sie den Schieberegler, um anzugeben wie viele Punkte Sie in "
+"der aktuellen Periode"
+
+#: .\trial_short\models.py:40
+msgid "You have just entered retirement in this period."
+msgstr "Sie wurden soeben pensioniert."
+
+#: .\trial_short\models.py:41
+msgid "You have less "
+msgstr "Ihre "
+
+#: .\trial_short\models.py:41
+#: .\trial_short\templates\trial_short\includes\tabs.html:12
+msgid "Savings"
+msgstr "Ersparnisse"
+
+#: .\trial_short\models.py:42
+msgid " than you need to cover your "
+msgstr " reichen nicht aus, um Ihre Lebenshaltungskosten zu decken "
+
+#: .\trial_short\models.py:42
+#: .\trial_short\templates\trial_short\includes\tabs.html:10
+msgid "Expenses"
+msgstr "Lebenshaltungskosten"
+
+#: .\trial_short\models.py:43
+msgid " this turn. You are in debt and will not make any "
+msgstr " . Sie können somit keine "
+
+#: .\trial_short\models.py:44
+msgid "Spending"
+msgstr "Ausgaben"
+
+#: .\trial_short\models.py:44
+msgid " decision."
+msgstr " tätigen."
+
+#: .\trial_short\pages.py:23 .\trial_short\pages.py:64
+#: .\trial_short\pages.py:110 .\trial_short\pages.py:156
+#: .\trial_short\pages.py:202 .\trial_short\pages.py:248
+#: .\trial_short\pages.py:294 .\trial_short\pages.py:340
+#: .\trial_short\pages.py:386 .\trial_short\pages.py:432
+#: .\trial_short\pages.py:478 .\trial_short\pages.py:524
+#: .\trial_short\pages.py:570 .\trial_short\pages.py:623
+#: .\trial_short\pages.py:674 .\trial_short\pages.py:725
+msgid "Please decide the amount you would like to spend."
+msgstr "Bitte entscheiden Sie, welchen Betrag Sie ausgeben möchten."
+
+#: .\trial_short\templates\trial_short\End.html:11
+msgid "Before you advance to the live round, you need to complete a quiz."
+msgstr "Bevor Sie in das reale Spiel kommen, müssen Sie ein Quiz absolvieren."
+
+#: .\trial_short\templates\trial_short\End.html:15
+msgid ""
+"You will be removed from the game, and earn no compensation,\n"
+"            if you give two or more wrong answers."
+msgstr ""
+"Sie werden vom Spiel ausgeschossen werden und damit keine Entschädigung "
+"bekommen, falls Sie zwei oder mehrere Fragen nicht korrekt beantworten."
+
+#: .\trial_short\templates\trial_short\End.html:19
+msgid ""
+"If you need to read the instructions again,\n"
+"        you will find them at the bottom of the page with the test questions."
+msgstr ""
+"Falls Sie die Instruktionen noch einmal lesen möchten, werden Sie diese am "
+"Ende der Seite mit den Testfragen finden."
+
+#: .\trial_short\templates\trial_short\Period1.html:357
+#: .\trial_short\templates\trial_short\Period10.html:360
+#: .\trial_short\templates\trial_short\Period11.html:360
+#: .\trial_short\templates\trial_short\Period12.html:360
+#: .\trial_short\templates\trial_short\Period13.html:379
+#: .\trial_short\templates\trial_short\Period14.html:365
+#: .\trial_short\templates\trial_short\Period15.html:365
+#: .\trial_short\templates\trial_short\Period16.html:365
+#: .\trial_short\templates\trial_short\Period2.html:360
+#: .\trial_short\templates\trial_short\Period3.html:360
+#: .\trial_short\templates\trial_short\Period4.html:360
+#: .\trial_short\templates\trial_short\Period5.html:360
+#: .\trial_short\templates\trial_short\Period6.html:360
+#: .\trial_short\templates\trial_short\Period7.html:360
+#: .\trial_short\templates\trial_short\Period8.html:360
+#: .\trial_short\templates\trial_short\Period9.html:360
+msgid "Trial life: Period"
+msgstr "Proberunde: Periode"
+
+#: .\trial_short\templates\trial_short\Period1.html:367
+#: .\trial_short\templates\trial_short\Period10.html:370
+#: .\trial_short\templates\trial_short\Period11.html:370
+#: .\trial_short\templates\trial_short\Period12.html:370
+#: .\trial_short\templates\trial_short\Period13.html:389
+#: .\trial_short\templates\trial_short\Period14.html:375
+#: .\trial_short\templates\trial_short\Period15.html:375
+#: .\trial_short\templates\trial_short\Period16.html:375
+#: .\trial_short\templates\trial_short\Period2.html:370
+#: .\trial_short\templates\trial_short\Period3.html:370
+#: .\trial_short\templates\trial_short\Period4.html:370
+#: .\trial_short\templates\trial_short\Period5.html:370
+#: .\trial_short\templates\trial_short\Period6.html:370
+#: .\trial_short\templates\trial_short\Period7.html:370
+#: .\trial_short\templates\trial_short\Period8.html:370
+#: .\trial_short\templates\trial_short\Period9.html:370
+msgid "."
+msgstr "ausgeben möchten."
+
+#: .\trial_short\templates\trial_short\Period1.html:373
+#: .\trial_short\templates\trial_short\Period1.html:381
+#: .\trial_short\templates\trial_short\Period1.html:389
+#: .\trial_short\templates\trial_short\Period1.html:397
+#: .\trial_short\templates\trial_short\Period1.html:405
+#: .\trial_short\templates\trial_short\Period1.html:413
+#: .\trial_short\templates\trial_short\Period1.html:421
+#: .\trial_short\templates\trial_short\Period1.html:429
+#: .\trial_short\templates\trial_short\Period1.html:437
+#: .\trial_short\templates\trial_short\Period1.html:445
+#: .\trial_short\templates\trial_short\Period1.html:453
+#: .\trial_short\templates\trial_short\Period1.html:461
+#: .\trial_short\templates\trial_short\Period1.html:469
+#: .\trial_short\templates\trial_short\Period1.html:477
+#: .\trial_short\templates\trial_short\Period1.html:485
+#: .\trial_short\templates\trial_short\Period1.html:493
+#: .\trial_short\templates\trial_short\Period10.html:376
+#: .\trial_short\templates\trial_short\Period10.html:384
+#: .\trial_short\templates\trial_short\Period10.html:392
+#: .\trial_short\templates\trial_short\Period10.html:400
+#: .\trial_short\templates\trial_short\Period10.html:408
+#: .\trial_short\templates\trial_short\Period10.html:416
+#: .\trial_short\templates\trial_short\Period10.html:424
+#: .\trial_short\templates\trial_short\Period10.html:432
+#: .\trial_short\templates\trial_short\Period10.html:440
+#: .\trial_short\templates\trial_short\Period10.html:448
+#: .\trial_short\templates\trial_short\Period10.html:456
+#: .\trial_short\templates\trial_short\Period10.html:464
+#: .\trial_short\templates\trial_short\Period10.html:472
+#: .\trial_short\templates\trial_short\Period10.html:480
+#: .\trial_short\templates\trial_short\Period10.html:488
+#: .\trial_short\templates\trial_short\Period10.html:496
+#: .\trial_short\templates\trial_short\Period11.html:376
+#: .\trial_short\templates\trial_short\Period11.html:384
+#: .\trial_short\templates\trial_short\Period11.html:392
+#: .\trial_short\templates\trial_short\Period11.html:400
+#: .\trial_short\templates\trial_short\Period11.html:408
+#: .\trial_short\templates\trial_short\Period11.html:416
+#: .\trial_short\templates\trial_short\Period11.html:424
+#: .\trial_short\templates\trial_short\Period11.html:432
+#: .\trial_short\templates\trial_short\Period11.html:440
+#: .\trial_short\templates\trial_short\Period11.html:448
+#: .\trial_short\templates\trial_short\Period11.html:456
+#: .\trial_short\templates\trial_short\Period11.html:464
+#: .\trial_short\templates\trial_short\Period11.html:472
+#: .\trial_short\templates\trial_short\Period11.html:480
+#: .\trial_short\templates\trial_short\Period11.html:488
+#: .\trial_short\templates\trial_short\Period11.html:496
+#: .\trial_short\templates\trial_short\Period12.html:376
+#: .\trial_short\templates\trial_short\Period12.html:384
+#: .\trial_short\templates\trial_short\Period12.html:392
+#: .\trial_short\templates\trial_short\Period12.html:400
+#: .\trial_short\templates\trial_short\Period12.html:408
+#: .\trial_short\templates\trial_short\Period12.html:416
+#: .\trial_short\templates\trial_short\Period12.html:424
+#: .\trial_short\templates\trial_short\Period12.html:432
+#: .\trial_short\templates\trial_short\Period12.html:440
+#: .\trial_short\templates\trial_short\Period12.html:448
+#: .\trial_short\templates\trial_short\Period12.html:456
+#: .\trial_short\templates\trial_short\Period12.html:464
+#: .\trial_short\templates\trial_short\Period12.html:472
+#: .\trial_short\templates\trial_short\Period12.html:480
+#: .\trial_short\templates\trial_short\Period12.html:488
+#: .\trial_short\templates\trial_short\Period12.html:496
+#: .\trial_short\templates\trial_short\Period13.html:395
+#: .\trial_short\templates\trial_short\Period13.html:403
+#: .\trial_short\templates\trial_short\Period13.html:411
+#: .\trial_short\templates\trial_short\Period13.html:419
+#: .\trial_short\templates\trial_short\Period13.html:427
+#: .\trial_short\templates\trial_short\Period13.html:435
+#: .\trial_short\templates\trial_short\Period13.html:443
+#: .\trial_short\templates\trial_short\Period13.html:451
+#: .\trial_short\templates\trial_short\Period13.html:459
+#: .\trial_short\templates\trial_short\Period13.html:467
+#: .\trial_short\templates\trial_short\Period13.html:475
+#: .\trial_short\templates\trial_short\Period13.html:483
+#: .\trial_short\templates\trial_short\Period13.html:491
+#: .\trial_short\templates\trial_short\Period13.html:499
+#: .\trial_short\templates\trial_short\Period13.html:507
+#: .\trial_short\templates\trial_short\Period13.html:515
+#: .\trial_short\templates\trial_short\Period14.html:381
+#: .\trial_short\templates\trial_short\Period14.html:389
+#: .\trial_short\templates\trial_short\Period14.html:397
+#: .\trial_short\templates\trial_short\Period14.html:405
+#: .\trial_short\templates\trial_short\Period14.html:413
+#: .\trial_short\templates\trial_short\Period14.html:421
+#: .\trial_short\templates\trial_short\Period14.html:429
+#: .\trial_short\templates\trial_short\Period14.html:437
+#: .\trial_short\templates\trial_short\Period14.html:445
+#: .\trial_short\templates\trial_short\Period14.html:453
+#: .\trial_short\templates\trial_short\Period14.html:461
+#: .\trial_short\templates\trial_short\Period14.html:469
+#: .\trial_short\templates\trial_short\Period14.html:477
+#: .\trial_short\templates\trial_short\Period14.html:485
+#: .\trial_short\templates\trial_short\Period14.html:493
+#: .\trial_short\templates\trial_short\Period14.html:501
+#: .\trial_short\templates\trial_short\Period15.html:381
+#: .\trial_short\templates\trial_short\Period15.html:389
+#: .\trial_short\templates\trial_short\Period15.html:397
+#: .\trial_short\templates\trial_short\Period15.html:405
+#: .\trial_short\templates\trial_short\Period15.html:413
+#: .\trial_short\templates\trial_short\Period15.html:421
+#: .\trial_short\templates\trial_short\Period15.html:429
+#: .\trial_short\templates\trial_short\Period15.html:437
+#: .\trial_short\templates\trial_short\Period15.html:445
+#: .\trial_short\templates\trial_short\Period15.html:453
+#: .\trial_short\templates\trial_short\Period15.html:461
+#: .\trial_short\templates\trial_short\Period15.html:469
+#: .\trial_short\templates\trial_short\Period15.html:477
+#: .\trial_short\templates\trial_short\Period15.html:485
+#: .\trial_short\templates\trial_short\Period15.html:493
+#: .\trial_short\templates\trial_short\Period15.html:501
+#: .\trial_short\templates\trial_short\Period16.html:381
+#: .\trial_short\templates\trial_short\Period16.html:389
+#: .\trial_short\templates\trial_short\Period16.html:397
+#: .\trial_short\templates\trial_short\Period16.html:405
+#: .\trial_short\templates\trial_short\Period16.html:413
+#: .\trial_short\templates\trial_short\Period16.html:421
+#: .\trial_short\templates\trial_short\Period16.html:429
+#: .\trial_short\templates\trial_short\Period16.html:437
+#: .\trial_short\templates\trial_short\Period16.html:445
+#: .\trial_short\templates\trial_short\Period16.html:453
+#: .\trial_short\templates\trial_short\Period16.html:461
+#: .\trial_short\templates\trial_short\Period16.html:469
+#: .\trial_short\templates\trial_short\Period16.html:477
+#: .\trial_short\templates\trial_short\Period16.html:485
+#: .\trial_short\templates\trial_short\Period16.html:493
+#: .\trial_short\templates\trial_short\Period16.html:501
+#: .\trial_short\templates\trial_short\Period2.html:376
+#: .\trial_short\templates\trial_short\Period2.html:384
+#: .\trial_short\templates\trial_short\Period2.html:392
+#: .\trial_short\templates\trial_short\Period2.html:400
+#: .\trial_short\templates\trial_short\Period2.html:408
+#: .\trial_short\templates\trial_short\Period2.html:416
+#: .\trial_short\templates\trial_short\Period2.html:424
+#: .\trial_short\templates\trial_short\Period2.html:432
+#: .\trial_short\templates\trial_short\Period2.html:440
+#: .\trial_short\templates\trial_short\Period2.html:448
+#: .\trial_short\templates\trial_short\Period2.html:456
+#: .\trial_short\templates\trial_short\Period2.html:464
+#: .\trial_short\templates\trial_short\Period2.html:472
+#: .\trial_short\templates\trial_short\Period2.html:480
+#: .\trial_short\templates\trial_short\Period2.html:488
+#: .\trial_short\templates\trial_short\Period2.html:496
+#: .\trial_short\templates\trial_short\Period3.html:376
+#: .\trial_short\templates\trial_short\Period3.html:384
+#: .\trial_short\templates\trial_short\Period3.html:392
+#: .\trial_short\templates\trial_short\Period3.html:400
+#: .\trial_short\templates\trial_short\Period3.html:408
+#: .\trial_short\templates\trial_short\Period3.html:416
+#: .\trial_short\templates\trial_short\Period3.html:424
+#: .\trial_short\templates\trial_short\Period3.html:432
+#: .\trial_short\templates\trial_short\Period3.html:440
+#: .\trial_short\templates\trial_short\Period3.html:448
+#: .\trial_short\templates\trial_short\Period3.html:456
+#: .\trial_short\templates\trial_short\Period3.html:464
+#: .\trial_short\templates\trial_short\Period3.html:472
+#: .\trial_short\templates\trial_short\Period3.html:480
+#: .\trial_short\templates\trial_short\Period3.html:488
+#: .\trial_short\templates\trial_short\Period3.html:496
+#: .\trial_short\templates\trial_short\Period4.html:376
+#: .\trial_short\templates\trial_short\Period4.html:384
+#: .\trial_short\templates\trial_short\Period4.html:392
+#: .\trial_short\templates\trial_short\Period4.html:400
+#: .\trial_short\templates\trial_short\Period4.html:408
+#: .\trial_short\templates\trial_short\Period4.html:416
+#: .\trial_short\templates\trial_short\Period4.html:424
+#: .\trial_short\templates\trial_short\Period4.html:432
+#: .\trial_short\templates\trial_short\Period4.html:440
+#: .\trial_short\templates\trial_short\Period4.html:448
+#: .\trial_short\templates\trial_short\Period4.html:456
+#: .\trial_short\templates\trial_short\Period4.html:464
+#: .\trial_short\templates\trial_short\Period4.html:472
+#: .\trial_short\templates\trial_short\Period4.html:480
+#: .\trial_short\templates\trial_short\Period4.html:488
+#: .\trial_short\templates\trial_short\Period4.html:496
+#: .\trial_short\templates\trial_short\Period5.html:376
+#: .\trial_short\templates\trial_short\Period5.html:384
+#: .\trial_short\templates\trial_short\Period5.html:392
+#: .\trial_short\templates\trial_short\Period5.html:400
+#: .\trial_short\templates\trial_short\Period5.html:408
+#: .\trial_short\templates\trial_short\Period5.html:416
+#: .\trial_short\templates\trial_short\Period5.html:424
+#: .\trial_short\templates\trial_short\Period5.html:432
+#: .\trial_short\templates\trial_short\Period5.html:440
+#: .\trial_short\templates\trial_short\Period5.html:448
+#: .\trial_short\templates\trial_short\Period5.html:456
+#: .\trial_short\templates\trial_short\Period5.html:464
+#: .\trial_short\templates\trial_short\Period5.html:472
+#: .\trial_short\templates\trial_short\Period5.html:480
+#: .\trial_short\templates\trial_short\Period5.html:488
+#: .\trial_short\templates\trial_short\Period5.html:496
+#: .\trial_short\templates\trial_short\Period6.html:376
+#: .\trial_short\templates\trial_short\Period6.html:384
+#: .\trial_short\templates\trial_short\Period6.html:392
+#: .\trial_short\templates\trial_short\Period6.html:400
+#: .\trial_short\templates\trial_short\Period6.html:408
+#: .\trial_short\templates\trial_short\Period6.html:416
+#: .\trial_short\templates\trial_short\Period6.html:424
+#: .\trial_short\templates\trial_short\Period6.html:432
+#: .\trial_short\templates\trial_short\Period6.html:440
+#: .\trial_short\templates\trial_short\Period6.html:448
+#: .\trial_short\templates\trial_short\Period6.html:456
+#: .\trial_short\templates\trial_short\Period6.html:464
+#: .\trial_short\templates\trial_short\Period6.html:472
+#: .\trial_short\templates\trial_short\Period6.html:480
+#: .\trial_short\templates\trial_short\Period6.html:488
+#: .\trial_short\templates\trial_short\Period6.html:496
+#: .\trial_short\templates\trial_short\Period7.html:376
+#: .\trial_short\templates\trial_short\Period7.html:384
+#: .\trial_short\templates\trial_short\Period7.html:392
+#: .\trial_short\templates\trial_short\Period7.html:400
+#: .\trial_short\templates\trial_short\Period7.html:408
+#: .\trial_short\templates\trial_short\Period7.html:416
+#: .\trial_short\templates\trial_short\Period7.html:424
+#: .\trial_short\templates\trial_short\Period7.html:432
+#: .\trial_short\templates\trial_short\Period7.html:440
+#: .\trial_short\templates\trial_short\Period7.html:448
+#: .\trial_short\templates\trial_short\Period7.html:456
+#: .\trial_short\templates\trial_short\Period7.html:464
+#: .\trial_short\templates\trial_short\Period7.html:472
+#: .\trial_short\templates\trial_short\Period7.html:480
+#: .\trial_short\templates\trial_short\Period7.html:488
+#: .\trial_short\templates\trial_short\Period7.html:496
+#: .\trial_short\templates\trial_short\Period8.html:376
+#: .\trial_short\templates\trial_short\Period8.html:384
+#: .\trial_short\templates\trial_short\Period8.html:392
+#: .\trial_short\templates\trial_short\Period8.html:400
+#: .\trial_short\templates\trial_short\Period8.html:408
+#: .\trial_short\templates\trial_short\Period8.html:416
+#: .\trial_short\templates\trial_short\Period8.html:424
+#: .\trial_short\templates\trial_short\Period8.html:432
+#: .\trial_short\templates\trial_short\Period8.html:440
+#: .\trial_short\templates\trial_short\Period8.html:448
+#: .\trial_short\templates\trial_short\Period8.html:456
+#: .\trial_short\templates\trial_short\Period8.html:464
+#: .\trial_short\templates\trial_short\Period8.html:472
+#: .\trial_short\templates\trial_short\Period8.html:480
+#: .\trial_short\templates\trial_short\Period8.html:488
+#: .\trial_short\templates\trial_short\Period8.html:496
+#: .\trial_short\templates\trial_short\Period9.html:376
+#: .\trial_short\templates\trial_short\Period9.html:384
+#: .\trial_short\templates\trial_short\Period9.html:392
+#: .\trial_short\templates\trial_short\Period9.html:400
+#: .\trial_short\templates\trial_short\Period9.html:408
+#: .\trial_short\templates\trial_short\Period9.html:416
+#: .\trial_short\templates\trial_short\Period9.html:424
+#: .\trial_short\templates\trial_short\Period9.html:432
+#: .\trial_short\templates\trial_short\Period9.html:440
+#: .\trial_short\templates\trial_short\Period9.html:448
+#: .\trial_short\templates\trial_short\Period9.html:456
+#: .\trial_short\templates\trial_short\Period9.html:464
+#: .\trial_short\templates\trial_short\Period9.html:472
+#: .\trial_short\templates\trial_short\Period9.html:480
+#: .\trial_short\templates\trial_short\Period9.html:488
+#: .\trial_short\templates\trial_short\Period9.html:496
+msgid "Life Period"
+msgstr "Periode"
+
+#: .\trial_short\templates\trial_short\Period1.html:502
+#: .\trial_short\templates\trial_short\Period10.html:505
+#: .\trial_short\templates\trial_short\Period11.html:505
+#: .\trial_short\templates\trial_short\Period12.html:505
+#: .\trial_short\templates\trial_short\Period13.html:524
+#: .\trial_short\templates\trial_short\Period14.html:510
+#: .\trial_short\templates\trial_short\Period15.html:510
+#: .\trial_short\templates\trial_short\Period16.html:510
+#: .\trial_short\templates\trial_short\Period2.html:505
+#: .\trial_short\templates\trial_short\Period3.html:505
+#: .\trial_short\templates\trial_short\Period4.html:505
+#: .\trial_short\templates\trial_short\Period5.html:505
+#: .\trial_short\templates\trial_short\Period6.html:505
+#: .\trial_short\templates\trial_short\Period7.html:505
+#: .\trial_short\templates\trial_short\Period8.html:505
+#: .\trial_short\templates\trial_short\Period9.html:505
+msgid "Expense Deck"
+msgstr "Mögliche Lebenshaltungskosten"
+
+#: .\trial_short\templates\trial_short\Period1.html:522
+#: .\trial_short\templates\trial_short\Period10.html:525
+#: .\trial_short\templates\trial_short\Period11.html:525
+#: .\trial_short\templates\trial_short\Period12.html:525
+#: .\trial_short\templates\trial_short\Period13.html:544
+#: .\trial_short\templates\trial_short\Period14.html:530
+#: .\trial_short\templates\trial_short\Period15.html:530
+#: .\trial_short\templates\trial_short\Period16.html:530
+#: .\trial_short\templates\trial_short\Period2.html:525
+#: .\trial_short\templates\trial_short\Period3.html:525
+#: .\trial_short\templates\trial_short\Period4.html:525
+#: .\trial_short\templates\trial_short\Period5.html:525
+#: .\trial_short\templates\trial_short\Period6.html:525
+#: .\trial_short\templates\trial_short\Period7.html:525
+#: .\trial_short\templates\trial_short\Period8.html:525
+#: .\trial_short\templates\trial_short\Period9.html:525
+msgid "Spending Decision"
+msgstr "Ausgaben"
+
+#: .\trial_short\templates\trial_short\Period1.html:532
+#: .\trial_short\templates\trial_short\Period10.html:535
+#: .\trial_short\templates\trial_short\Period11.html:535
+#: .\trial_short\templates\trial_short\Period12.html:535
+#: .\trial_short\templates\trial_short\Period13.html:554
+#: .\trial_short\templates\trial_short\Period14.html:540
+#: .\trial_short\templates\trial_short\Period15.html:540
+#: .\trial_short\templates\trial_short\Period16.html:540
+#: .\trial_short\templates\trial_short\Period2.html:535
+#: .\trial_short\templates\trial_short\Period3.html:535
+#: .\trial_short\templates\trial_short\Period4.html:535
+#: .\trial_short\templates\trial_short\Period5.html:535
+#: .\trial_short\templates\trial_short\Period6.html:535
+#: .\trial_short\templates\trial_short\Period7.html:535
+#: .\trial_short\templates\trial_short\Period8.html:535
+#: .\trial_short\templates\trial_short\Period9.html:535
+msgid "Total Savings"
+msgstr "Total Ersparnisse"
+
+#: .\trial_short\templates\trial_short\Period1.html:535
+#: .\trial_short\templates\trial_short\Period10.html:538
+#: .\trial_short\templates\trial_short\Period11.html:538
+#: .\trial_short\templates\trial_short\Period12.html:538
+#: .\trial_short\templates\trial_short\Period13.html:557
+#: .\trial_short\templates\trial_short\Period14.html:543
+#: .\trial_short\templates\trial_short\Period15.html:543
+#: .\trial_short\templates\trial_short\Period16.html:543
+#: .\trial_short\templates\trial_short\Period2.html:538
+#: .\trial_short\templates\trial_short\Period3.html:538
+#: .\trial_short\templates\trial_short\Period4.html:538
+#: .\trial_short\templates\trial_short\Period5.html:538
+#: .\trial_short\templates\trial_short\Period6.html:538
+#: .\trial_short\templates\trial_short\Period7.html:538
+#: .\trial_short\templates\trial_short\Period8.html:538
+#: .\trial_short\templates\trial_short\Period9.html:538
+msgid "Next"
+msgstr "Weiter"
+
+#: .\trial_short\templates\trial_short\Start.html:11
+msgid "Trial round"
+msgstr "Testrunde"
+
+#: .\trial_short\templates\trial_short\Start.html:14
+msgid ""
+"You will now play a trial life to get you familiarized with the experiment."
+msgstr ""
+"Sie werden jetzt ein Probelaufleben spielen, um sich mit dem Spiel vertraut "
+"zu machen."
+
+#: .\trial_short\templates\trial_short\Start.html:16
+msgid ""
+"Everything is identical to the lives you will play,\n"
+"        except that you will not earn any financial reward based on the "
+"results of this trial life."
+msgstr ""
+"Alles entspricht der Runde, die Sie spielen werden, außer dass Sie keine "
+"finanzielle Belohnung auf der Grundlage der Ergebnisse dieses Probelaufs "
+"erhalten."
+
+#: .\trial_short\templates\trial_short\Start.html:19
+msgid ""
+"Use this round to explore all features of the game.\n"
+"        You can access the instructions clicking on the buttons at the "
+"bottom of the page."
+msgstr ""
+"Nutzen Sie diese Testrunde, um alle Funktionen des Spiels zu erkunden. Sie "
+"können die Anleitung jederzeit aufrufen, indem Sie auf die Schaltflächen "
+"unten auf der Seite klicken."
+
+#: .\trial_short\templates\trial_short\Summary.html:11
+msgid "Summary"
+msgstr "Zusammenfassung"
+
+#: .\trial_short\templates\trial_short\Summary.html:14
+msgid ""
+"This is the end of the trial life.\n"
+"        A reward from the trial round will not be paid to you, as this is "
+"just a test."
+msgstr ""
+"Das ist das Ende der Proberunde. Da dies nur ein Test war, wird Ihre "
+"potenzielle Belohnung davon nicht betroffen sein."
 
 #: .\trial_short\templates\trial_short\includes\tabs.html:8
 msgid "Instruction"
-msgstr ""
+msgstr "Anweisung"
 
 #: .\trial_short\templates\trial_short\includes\tabs.html:9
 msgid "Income"
-msgstr ""
-
-#: .\trial_short\templates\trial_short\includes\tabs.html:10
-msgid "Expenses"
-msgstr ""
+msgstr "Einkommen"
 
 #: .\trial_short\templates\trial_short\includes\tabs.html:11
 msgid "Spending decision"
-msgstr ""
-
-#: .\trial_short\templates\trial_short\includes\tabs.html:12
-msgid "Savings"
-msgstr ""
+msgstr "Ausgaben"
 
 #: .\trial_short\templates\trial_short\includes\tabs.html:13
 msgid "Your reward"
-msgstr ""
+msgstr "Ihre Belohnung"
 
 #: .\trial_short\templates\trial_short\includes\tabs.html:17
 msgid "Please click the other tabs to check the instruction if you want."
 msgstr ""
+"Bitte klicken Sie auf die anderen Registerkarten, um die Anweisungen zu "
+"überprüfen, wenn Sie möchten."
 
 #: .\trial_short\templates\trial_short\includes\tabs.html:21
 msgid ""
@@ -51,18 +536,25 @@ msgid ""
 "points),\n"
 "        signed as a positive (+) number."
 msgstr ""
+"In der <b>Arbeitsphase</b> werden Sie <b>Einkommen</b> (in Punkten) "
+"erzielen. Die Höhe des Einkommens wird in jeder Periode mittels einer "
+"positiven Zahl ausgedrückt."
 
 #: .\trial_short\templates\trial_short\includes\tabs.html:27
 msgid ""
 "You will always know in advance your <b>Income</b> for all periods during "
 "<b>employment</b>."
 msgstr ""
+"Ihr <b>Einkommen</b> für die <b>aktuelle und alle zukünftigen Perioden</b> "
+"wird Ihnen bekannt sein."
 
 #: .\trial_short\templates\trial_short\includes\tabs.html:29
 msgid ""
 "During <b>retirement</b> you will not work and will not have <b>any</b> "
 "working income."
 msgstr ""
+"Nach der <b>Pensionierung</b> werden Sie nicht mehr arbeiten und somit "
+"<b>kein</b> Einkommen haben."
 
 #: .\trial_short\templates\trial_short\includes\tabs.html:33
 msgid ""
@@ -72,6 +564,10 @@ msgid ""
 "        The <b>Expenses</b> are automatically deducted at the start of the "
 "period."
 msgstr ""
+"In jeder Periode (in der Arbeitsphase und nach der Pensionierung) werden Sie "
+"Lebenshaltungskosten (in Punkten) haben. Die Lebenshaltungskosten werden als "
+"eine <b>negative</b> Zahl dargestellt. Die Lebenshaltungskosten werden zu "
+"Beginn jeder Periode automatisch abgezogen."
 
 #: .\trial_short\templates\trial_short\includes\tabs.html:40
 msgid ""
@@ -79,6 +575,9 @@ msgid ""
 "with 16 cards.\n"
 "        Once an expense card is drawn it is removed from the deck."
 msgstr ""
+"Die <b>Lebenshaltungskosten<b> für jede Periode werden zufällig bestimmt. "
+"Dafür wird der Computer in jeder Periode eine Karte von einem Deck mit 16 "
+"Karten zufällig ziehen. Gezogene Karten werden vom Deck entfernt."
 
 #: .\trial_short\templates\trial_short\includes\tabs.html:46
 msgid ""
@@ -86,10 +585,16 @@ msgid ""
 "        The <b>Expenses</b> for future periods are indicated by “?”.\n"
 "        They are only revealed at the beginning of each period."
 msgstr ""
+"Sie werden die Lebenshaltungskosten in der aktuellen und in den vergangenen "
+"Perioden sehen. Die <b>Lebenshaltungskosten</b> in den darauffolgenden "
+"Perioden werden als Fragezeichen dargestellt; sie werden erst dann bekannt, "
+"wenn die jeweilige Periode beginnt."
 
 #: .\trial_short\templates\trial_short\includes\tabs.html:54
 msgid "In each period, you will decide your <b>Spending</b> (in points)."
 msgstr ""
+"In jeder Periode werden Sie über Ihre <b>Ausgaben</b> (in Punkten) "
+"entscheiden."
 
 #: .\trial_short\templates\trial_short\includes\tabs.html:56
 msgid ""
@@ -97,6 +602,8 @@ msgid ""
 "        you cannot go back to previous periods to change your previous "
 "spending decisions."
 msgstr ""
+"Sobald die nächste Periode beginnt, werden Sie die bereits gemachten "
+"Entscheidungen über Ihre Ausgaben nicht mehr rückwirkend ändern können."
 
 #: .\trial_short\templates\trial_short\includes\tabs.html:61
 msgid ""
@@ -104,6 +611,8 @@ msgid ""
 "period,\n"
 "        carrying them to the future periods."
 msgstr ""
+"Mit dem Einkommen, das Sie nicht ausgeben, bilden Sie Ersparnisse. Die "
+"Ersparnisse jeder Periode werden in Ihrem Sparkonto deponiert."
 
 #: .\trial_short\templates\trial_short\includes\tabs.html:64
 msgid ""
@@ -112,6 +621,9 @@ msgid ""
 "        Your debt will accumulate as a <b>negative</b> number in your "
 "<b>Savings</b> account."
 msgstr ""
+"Falls nach der Pensionierung Ihre Ersparnisse kleiner sind als Ihre "
+"Lebenshaltungskosten, werden Sie Schulden bilden. Die Schulden werden als "
+"eine negative Zahl in Ihrem Sparkonto dargestellt."
 
 #: .\trial_short\templates\trial_short\includes\tabs.html:67
 msgid ""
@@ -119,6 +631,8 @@ msgid ""
 "will be lost.\n"
 "        They do not carry over to your next life."
 msgstr ""
+"Ersparnisse, welche bis zum Ende des Lebens nicht ausgegeben werden, gehen "
+"verloren. Sie werden nicht ins nächste Leben übertragen."
 
 #: .\trial_short\templates\trial_short\includes\tabs.html:72
 msgid ""
@@ -128,8 +642,16 @@ msgid ""
 "        Then, the computer will randomly select one of the 16 periods of the "
 "selected life.\n"
 "        The Spending points in that period will be exchanged for Euros at a "
-"rate of <b>&euro; 1.00 = 5 points.</b>\n"
+"rate of <b>&euro; 1.00 = 14 points.</b>\n"
 "        However, if you have accumulated <b>any</b> debt at <b>any</b> "
 "period of that life,\n"
 "        your <b>Reward</b> will be <b>zero</b>."
 msgstr ""
+"Ihre <b>Belohnung</b> hängt von Ihren Entscheidungen bzgl. Ihrer "
+"<b>Ausgaben</b> ab. Um Ihre <b>Belohnung</b> zu bestimmen wird der Computer "
+"zuerst zufällig eines von Ihren 4 Leben auswählen. Dann wird der Computer "
+"zufällig eine von den 16 Perioden des gewählten Lebens bestimmen. Ihre "
+"Ausgaben (in Punkten) in dieser Periode werden in Euros mit einem "
+"Wechselkurs von <b>&euro; 1.00 = 14 Punkte</b> umgewandelt. Wenn Sie aber in "
+"irgendeiner Periode des gewählten Lebens Schulden haben, wird Ihre Belohnung "
+"<b>Null</b> sein."

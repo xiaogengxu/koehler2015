@@ -35,13 +35,13 @@ class Subsession(BaseSubsession):
         for player in self.get_players():
             random.shuffle(expense_seq)
             player.participant.vars['expense_list'] = expense_seq
-            player.participant.vars['start_text'] = 'Please tap and move on the slider below to indicate ' \
-                                                    'how much you would like to spend in current Period'
-            player.participant.vars['start_text_retire'] = 'You have just entered retirement in this period.'
-            player.participant.vars['spend_text'] = 'You have less '+'<b>'+'Savings'+'</b>'+\
-                                                    ' than you need to cover your '+'<b>'+'Expenses'+'</b>'+\
-                                                    ' this turn. You are in debt and will not make any '+'<b>'+\
-                                                    'Spending'+'</b>'+' decision.'
+            player.participant.vars['start_text'] = _('Please tap and move on the slider below to indicate '
+                                                      'how much you would like to spend in current Period')
+            player.participant.vars['start_text_retire'] = _('You have just entered retirement in this period.')
+            player.participant.vars['spend_text'] = _('You have less ')+'<b>'+_('Savings')+'</b>'+\
+                                                    _(' than you need to cover your ')+'<b>'+_('Expenses')+'</b>'+\
+                                                    _(' this turn. You are in debt and will not make any ')+'<b>'+\
+                                                    _('Spending')+'</b>'+_(' decision.')
             player.participant.vars['total_saving_long1'] = 0
 
             for j in range(1, 17):

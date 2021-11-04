@@ -16,18 +16,18 @@ class Start(Page):
     get_timeout_seconds = get_timeout_seconds
 
     def is_displayed(self):
-        return self.participant.vars['time_instruction'] >= 60 and self.participant.vars['end'] == 0 and \
+        return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['end'] == 0 and \
                self.participant.vars['treatment'] == 'long_first' and self.player.round_number == 1 and \
-               get_timeout_seconds(self.player) > 3
+               get_timeout_seconds(self.player) > 3 and self.participant.vars['consent'] == 'yes'
 
 
 class Start_to_L(Page):
     form_model = 'player'
 
     def is_displayed(self):
-        return self.participant.vars['time_instruction'] >= 60 and self.participant.vars['end'] == 0 and \
+        return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['end'] == 0 and \
                self.participant.vars['treatment'] == 'short_first' and self.player.round_number == 1 and \
-               get_timeout_seconds(self.player) > 3
+               get_timeout_seconds(self.player) > 3 and self.participant.vars['consent'] == 'yes'
 
 
 class Period1(Page):
@@ -36,11 +36,11 @@ class Period1(Page):
 
     def error_message(self, values):
         if not values['check_spend_long1']:
-            return 'Please decide the amount you would like to spend.'
+            return _('Please decide the amount you would like to spend.')
 
     def is_displayed(self):
-        return self.participant.vars['time_instruction'] >= 60 and self.participant.vars['end'] == 0 and \
-               get_timeout_seconds(self.player) > 3
+        return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['end'] == 0 and \
+               get_timeout_seconds(self.player) > 3 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
         lang = self.participant.vars['lang_chosen']
@@ -89,11 +89,11 @@ class Period2(Page):
 
     def error_message(self, values):
         if not values['check_spend_long2']:
-            return 'Please decide the amount you would like to spend.'
+            return _('Please decide the amount you would like to spend.')
 
     def is_displayed(self):
-        return self.participant.vars['time_instruction'] >= 60 and self.participant.vars['end'] == 0 and \
-               get_timeout_seconds(self.player) > 3
+        return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['end'] == 0 and \
+               get_timeout_seconds(self.player) > 3 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
         lang = self.participant.vars['lang_chosen']
@@ -148,11 +148,11 @@ class Period3(Page):
 
     def error_message(self, values):
         if not values['check_spend_long3']:
-            return 'Please decide the amount you would like to spend.'
+            return _('Please decide the amount you would like to spend.')
 
     def is_displayed(self):
-        return self.participant.vars['time_instruction'] >= 60 and self.participant.vars['end'] == 0 and \
-               get_timeout_seconds(self.player) > 3
+        return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['end'] == 0 and \
+               get_timeout_seconds(self.player) > 3 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
         lang = self.participant.vars['lang_chosen']
@@ -207,11 +207,11 @@ class Period4(Page):
 
     def error_message(self, values):
         if not values['check_spend_long4']:
-            return 'Please decide the amount you would like to spend.'
+            return _('Please decide the amount you would like to spend.')
 
     def is_displayed(self):
-        return self.participant.vars['time_instruction'] >= 60 and self.participant.vars['end'] == 0 and \
-               get_timeout_seconds(self.player) > 3
+        return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['end'] == 0 and \
+               get_timeout_seconds(self.player) > 3 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
         lang = self.participant.vars['lang_chosen']
@@ -266,11 +266,11 @@ class Period5(Page):
 
     def error_message(self, values):
         if not values['check_spend_long5']:
-            return 'Please decide the amount you would like to spend.'
+            return _('Please decide the amount you would like to spend.')
 
     def is_displayed(self):
-        return self.participant.vars['time_instruction'] >= 60 and self.participant.vars['end'] == 0 and \
-               get_timeout_seconds(self.player) > 3
+        return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['end'] == 0 and \
+               get_timeout_seconds(self.player) > 3 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
         lang = self.participant.vars['lang_chosen']
@@ -325,11 +325,11 @@ class Period6(Page):
 
     def error_message(self, values):
         if not values['check_spend_long6']:
-            return 'Please decide the amount you would like to spend.'
+            return _('Please decide the amount you would like to spend.')
 
     def is_displayed(self):
-        return self.participant.vars['time_instruction'] >= 60 and self.participant.vars['end'] == 0 and \
-               get_timeout_seconds(self.player) > 3
+        return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['end'] == 0 and \
+               get_timeout_seconds(self.player) > 3 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
         lang = self.participant.vars['lang_chosen']
@@ -384,11 +384,11 @@ class Period7(Page):
 
     def error_message(self, values):
         if not values['check_spend_long7']:
-            return 'Please decide the amount you would like to spend.'
+            return _('Please decide the amount you would like to spend.')
 
     def is_displayed(self):
-        return self.participant.vars['time_instruction'] >= 60 and self.participant.vars['end'] == 0 and \
-               get_timeout_seconds(self.player) > 3
+        return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['end'] == 0 and \
+               get_timeout_seconds(self.player) > 3 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
         lang = self.participant.vars['lang_chosen']
@@ -443,11 +443,11 @@ class Period8(Page):
 
     def error_message(self, values):
         if not values['check_spend_long8']:
-            return 'Please decide the amount you would like to spend.'
+            return _('Please decide the amount you would like to spend.')
 
     def is_displayed(self):
-        return self.participant.vars['time_instruction'] >= 60 and self.participant.vars['end'] == 0 and \
-               get_timeout_seconds(self.player) > 3
+        return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['end'] == 0 and \
+               get_timeout_seconds(self.player) > 3 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
         lang = self.participant.vars['lang_chosen']
@@ -502,11 +502,11 @@ class Period9(Page):
 
     def error_message(self, values):
         if not values['check_spend_long9']:
-            return 'Please decide the amount you would like to spend.'
+            return _('Please decide the amount you would like to spend.')
 
     def is_displayed(self):
-        return self.participant.vars['time_instruction'] >= 60 and self.participant.vars['end'] == 0 and \
-               get_timeout_seconds(self.player) > 3
+        return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['end'] == 0 and \
+               get_timeout_seconds(self.player) > 3 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
         lang = self.participant.vars['lang_chosen']
@@ -568,11 +568,11 @@ class Period10(Page):
 
     def error_message(self, values):
         if not values['check_spend_long10']:
-            return 'Please decide the amount you would like to spend.'
+            return _('Please decide the amount you would like to spend.')
 
     def is_displayed(self):
-        return self.participant.vars['time_instruction'] >= 60 and self.participant.vars['end'] == 0 and \
-               get_timeout_seconds(self.player) > 3
+        return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['end'] == 0 and \
+               get_timeout_seconds(self.player) > 3 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
         lang = self.participant.vars['lang_chosen']
@@ -632,11 +632,11 @@ class Period11(Page):
 
     def error_message(self, values):
         if not values['check_spend_long11']:
-            return 'Please decide the amount you would like to spend.'
+            return _('Please decide the amount you would like to spend.')
 
     def is_displayed(self):
-        return self.participant.vars['time_instruction'] >= 60 and self.participant.vars['end'] == 0 and \
-               get_timeout_seconds(self.player) > 3
+        return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['end'] == 0 and \
+               get_timeout_seconds(self.player) > 3 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
         lang = self.participant.vars['lang_chosen']
@@ -696,11 +696,11 @@ class Period12(Page):
 
     def error_message(self, values):
         if not values['check_spend_long12']:
-            return 'Please decide the amount you would like to spend.'
+            return _('Please decide the amount you would like to spend.')
 
     def is_displayed(self):
-        return self.participant.vars['time_instruction'] >= 60 and self.participant.vars['end'] == 0 and \
-               get_timeout_seconds(self.player) > 3
+        return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['end'] == 0 and \
+               get_timeout_seconds(self.player) > 3 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
         lang = self.participant.vars['lang_chosen']
@@ -760,11 +760,11 @@ class Period13(Page):
 
     def error_message(self, values):
         if not values['check_spend_long13']:
-            return 'Please decide the amount you would like to spend.'
+            return _('Please decide the amount you would like to spend.')
 
     def is_displayed(self):
-        return self.participant.vars['time_instruction'] >= 60 and self.participant.vars['end'] == 0 and \
-               get_timeout_seconds(self.player) > 3
+        return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['end'] == 0 and \
+               get_timeout_seconds(self.player) > 3 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
         lang = self.participant.vars['lang_chosen']
@@ -824,11 +824,11 @@ class Period14(Page):
 
     def error_message(self, values):
         if not values['check_spend_long14']:
-            return 'Please decide the amount you would like to spend.'
+            return _('Please decide the amount you would like to spend.')
 
     def is_displayed(self):
-        return self.participant.vars['time_instruction'] >= 60 and self.participant.vars['end'] == 0 and \
-               get_timeout_seconds(self.player) > 3
+        return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['end'] == 0 and \
+               get_timeout_seconds(self.player) > 3 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
         lang = self.participant.vars['lang_chosen']
@@ -888,11 +888,11 @@ class Period15(Page):
 
     def error_message(self, values):
         if not values['check_spend_long15']:
-            return 'Please decide the amount you would like to spend.'
+            return _('Please decide the amount you would like to spend.')
 
     def is_displayed(self):
-        return self.participant.vars['time_instruction'] >= 60 and self.participant.vars['end'] == 0 and \
-               get_timeout_seconds(self.player) > 3
+        return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['end'] == 0 and \
+               get_timeout_seconds(self.player) > 3 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
         lang = self.participant.vars['lang_chosen']
@@ -952,11 +952,11 @@ class Period16(Page):
 
     def error_message(self, values):
         if not values['check_spend_long16']:
-            return 'Please decide the amount you would like to spend.'
+            return _('Please decide the amount you would like to spend.')
 
     def is_displayed(self):
-        return self.participant.vars['time_instruction'] >= 60 and self.participant.vars['end'] == 0 and \
-               get_timeout_seconds(self.player) > 3
+        return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['end'] == 0 and \
+               get_timeout_seconds(self.player) > 3 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
         lang = self.participant.vars['lang_chosen']
@@ -1010,8 +1010,8 @@ class End_long(Page):
     form_model = 'player'
 
     def is_displayed(self):
-        return self.participant.vars['time_instruction'] >= 60 and self.participant.vars['end'] == 0 and \
-               get_timeout_seconds(self.player) > 3
+        return self.participant.vars['time_instruction'] >= 30 and self.participant.vars['end'] == 0 and \
+               get_timeout_seconds(self.player) > 3 and self.participant.vars['consent'] == 'yes'
 
     def vars_for_template(self):
         lang = self.participant.vars['lang_chosen']
