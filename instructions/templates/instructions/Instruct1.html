@@ -20,7 +20,7 @@
     <p>{% blocktrans %}During your <b>employment</b> periods, you will earn <b>Income</b> (in points),
         signed as a positive (+) number.{% endblocktrans %}</p>
 
-    <img id="graph" width="150" height="auto" src="{% static 'fig_instruct1.png' %}"/>
+    <img id="graph" width="150" height="auto"/>
     <br></br>
 
     <p>{% blocktrans %}You will always know in advance your <b>Income</b> for all periods during <b>employment</b>.{% endblocktrans %}</p>
@@ -35,6 +35,16 @@
             <span class="sr-only">2% Complete</span>
         </div>
     </div>
+
+    <script>
+        var lang_chosen = {{ lang|json }};
+        if (lang_chosen === 'en') {
+            document.getElementById('graph').src = "{% static 'fig_instruct1.png' %}";
+        }
+        else if (lang_chosen === 'de') {
+            document.getElementById('graph').src = "{% static 'fig_instruct1_de.png' %}";
+        }
+    </script>
 
     <style>
         .otree-title {

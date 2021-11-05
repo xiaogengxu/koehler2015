@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-04 21:45+0200\n"
+"POT-Creation-Date: 2021-11-05 15:52+0200\n"
 "PO-Revision-Date: 2021-11-04 23:11+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -38,77 +38,77 @@ msgstr "4. Wann werden Sie Schulden machen?"
 msgid "5. What determines your additional compensation?"
 msgstr "5.  Was bestimmt Ihre Belohnung?"
 
-#: .\quiz\pages.py:19 .\quiz\pages.py:113
+#: .\quiz\pages.py:19 .\quiz\pages.py:119
 #: .\quiz\templates\quiz\includes\tabs.html:10
 msgid "Expenses"
 msgstr "Lebenshaltungskosten"
 
-#: .\quiz\pages.py:19 .\quiz\pages.py:113
+#: .\quiz\pages.py:19 .\quiz\pages.py:119
 #: .\quiz\templates\quiz\includes\tabs.html:9
 msgid "Income"
 msgstr "Einkommen"
 
-#: .\quiz\pages.py:19 .\quiz\pages.py:113
+#: .\quiz\pages.py:19 .\quiz\pages.py:119
 msgid "Spending"
 msgstr "Ausgaben"
 
-#: .\quiz\pages.py:24 .\quiz\pages.py:118
+#: .\quiz\pages.py:24 .\quiz\pages.py:124
 msgid "Expenses are zero."
 msgstr " Die Lebenshaltungskosten sind Null."
 
-#: .\quiz\pages.py:24 .\quiz\pages.py:118
+#: .\quiz\pages.py:24 .\quiz\pages.py:124
 msgid "Income is zero."
 msgstr "Das Einkommen ist Null."
 
-#: .\quiz\pages.py:25 .\quiz\pages.py:119
+#: .\quiz\pages.py:25 .\quiz\pages.py:125
 msgid "Spending is not allowed or possible."
 msgstr "Ausgaben sind nicht mehr zugelassen oder nicht mehr möglich."
 
-#: .\quiz\pages.py:31 .\quiz\pages.py:125
+#: .\quiz\pages.py:31 .\quiz\pages.py:131
 msgid ""
 "Expenses are deducted from my Income or Savings, limiting my maximum Spending"
 msgstr ""
 "Die Lebenshaltungskosten werden vom Einkommen und den bisherigen "
 "Ersparnissen abgezogen"
 
-#: .\quiz\pages.py:32 .\quiz\pages.py:126
+#: .\quiz\pages.py:32 .\quiz\pages.py:132
 msgid "Expenses increase my Savings automatically"
 msgstr "Die Lebenshaltungskosten erhöhen meine Ersparnisse automatisch"
 
-#: .\quiz\pages.py:33 .\quiz\pages.py:127
+#: .\quiz\pages.py:33 .\quiz\pages.py:133
 msgid "Expenses are added to my Income and increase maximum Spending"
 msgstr ""
 "Die Lebenshaltungskosten werden zu meinem Einkommen addiert und erhöhen "
 "damit die Höhe der möglichen Ausgaben"
 
-#: .\quiz\pages.py:38 .\quiz\pages.py:132
+#: .\quiz\pages.py:38 .\quiz\pages.py:138
 msgid "During retirement when you have less Savings than Expenses"
 msgstr ""
 "Wenn nach der Pensionierung die Lebenshaltungskosten höher sind als meine "
 "Ersparnisse"
 
-#: .\quiz\pages.py:39 .\quiz\pages.py:133
+#: .\quiz\pages.py:39 .\quiz\pages.py:139
 msgid "During employment when you have zero Expenses"
 msgstr "Wenn in der Arbeitsphase die Lebenshaltungskosten Null sind"
 
-#: .\quiz\pages.py:40 .\quiz\pages.py:134
+#: .\quiz\pages.py:40 .\quiz\pages.py:140
 msgid "During retirement when your Spending is higher than your Income"
 msgstr ""
 "Wenn nach der Pensionierung die Ausgaben höher sind als das Arbeitseinkommen"
 
-#: .\quiz\pages.py:45 .\quiz\pages.py:139
+#: .\quiz\pages.py:45 .\quiz\pages.py:145
 msgid "Savings points at the end of one life (as selected by a computer)."
 msgstr ""
 "Die Höhe der Ersparnisse am Ende eines vom Computer zufällig gewählten "
 "Lebens."
 
-#: .\quiz\pages.py:46 .\quiz\pages.py:140
+#: .\quiz\pages.py:46 .\quiz\pages.py:146
 msgid "Spending points in one period of one life (as selected by a computer)."
 msgstr ""
 "Die Ausgaben in einer vom Computer zufällig gewählten Periode eines zufällig "
 "gewählten Lebens."
 
-#: .\quiz\pages.py:47 .\quiz\pages.py:141
+#: .\quiz\pages.py:47 .\quiz\pages.py:147
 msgid "Average Expense points for all periods in all lives."
 msgstr "Die durchschnittlichen Ausgaben über alle Perioden und alle Leben."
 
@@ -116,7 +116,7 @@ msgstr "Die durchschnittlichen Ausgaben über alle Perioden und alle Leben."
 msgid "Please answer all questions."
 msgstr "Bitte beantworten Sie alle Fragen."
 
-#: .\quiz\pages.py:156
+#: .\quiz\pages.py:162
 msgid "Please answer the question."
 msgstr "Bitte beantworten Sie die Frage."
 

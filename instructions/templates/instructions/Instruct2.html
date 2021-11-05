@@ -21,20 +21,20 @@
         you will have <b>Expenses</b> (in points) indicated as a negative number (-).
         The <b>Expenses</b> are automatically deducted at the start of the period.{% endblocktrans %}</p>
 
-    <img id="graph" width="110" height="auto" src="{% static 'fig_instruct2a.png' %}"/>
+    <img id="graph1" width="110" height="auto"/>
     <br></br>
 
     <p>{% blocktrans %}The <b>Expenses</b> for each period are randomly drawn from an Expense Deck with 16 cards.
         Once an expense card is drawn it is removed from the deck.{% endblocktrans %}</p>
 
-    <img id="graph" width="100" height="auto" src="{% static 'fig_instruct2b.png' %}"/>
+    <img id="graph2" width="100" height="auto"/>
     <br></br>
 
     <p>{% blocktrans %}You can see expenses from the current and previous periods.
         The <b>Expenses</b> for future periods are indicated by “?”.
         They are only revealed at the beginning of each period.{% endblocktrans %}</p>
 
-    <img id="graph" width="100" height="auto" src="{% static 'fig_instruct2c.png' %}"/>
+    <img id="graph3" width="100" height="auto"/>
     <br></br>
 
     {% next_button %}
@@ -45,6 +45,20 @@
             <span class="sr-only">3% Complete</span>
         </div>
     </div>
+
+    <script>
+        var lang_chosen = {{ lang|json }};
+        if (lang_chosen === 'en') {
+            document.getElementById('graph1').src = "{% static 'fig_instruct2a.png' %}";
+            document.getElementById('graph2').src = "{% static 'fig_instruct2b.png' %}";
+            document.getElementById('graph3').src = "{% static 'fig_instruct2c.png' %}";
+        }
+        else if (lang_chosen === 'de') {
+            document.getElementById('graph1').src = "{% static 'fig_instruct2a_de.png' %}";
+            document.getElementById('graph2').src = "{% static 'fig_instruct2b_de.png' %}";
+            document.getElementById('graph3').src = "{% static 'fig_instruct2c_de.png' %}";
+        }
+    </script>
 
     <style>
         .otree-title {

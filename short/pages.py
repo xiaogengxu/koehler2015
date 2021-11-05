@@ -754,6 +754,7 @@ class Period13(Page):
         else:
             round_num = self.player.round_number + 2
         start_text = self.participant.vars['start_text']
+        start_title_retire = self.participant.vars['start_title_retire']
         start_text_retire = self.participant.vars['start_text_retire']
         spend_text = str(self.participant.vars['spend_text'])
         expense_list1 = []
@@ -778,6 +779,7 @@ class Period13(Page):
             'round_bar': round_bar,
             'round_num': round_num,
             'start_text': start_text,
+            'start_title_retire': start_title_retire,
             'start_text_retire': start_text_retire,
             'spend_text': spend_text,
             'period': period,

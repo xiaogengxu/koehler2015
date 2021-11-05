@@ -53,6 +53,12 @@ class Quiz(Page):
                 or not values['quiz5']:
             return _('Please answer all questions.')
 
+    def vars_for_template(self):
+        lang = self.participant.vars['lang_chosen']
+        return {
+            'lang': lang
+        }
+
     def before_next_page(self):
         self.participant.vars['expiry'] = time.time() + 60*60
         if self.player.quiz1 and self.player.quiz2 and self.player.quiz3 and self.player.quiz4 and self.player.quiz5:
@@ -156,7 +162,6 @@ class Quiz_retry(Page):
             return _('Please answer the question.')
 
     def vars_for_template(self):
-        treatment = self.participant.vars['treatment']
         lang = self.participant.vars['lang_chosen']
         if self.participant.vars['mis_q1'] == 1:
             show1 = 1
@@ -184,7 +189,6 @@ class Quiz_retry(Page):
             show5 = 0
 
         return {
-            'treatment': treatment,
             'lang': lang,
             'show1': show1,
             'show2': show2,

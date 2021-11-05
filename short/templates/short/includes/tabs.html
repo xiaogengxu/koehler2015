@@ -21,7 +21,7 @@
     <p>{% blocktrans %}During your <b>employment</b> periods, you will earn <b>Income</b> (in points),
         signed as a positive (+) number.{% endblocktrans %}</p>
 
-    <img id="graph" width="150" height="auto" src="{% static 'fig_instruct1.png' %}"/>
+    <img id="graph" width="150" height="auto"/>
     <br></br>
 
     <p>{% blocktrans %}You will always know in advance your <b>Income</b> for all periods during <b>employment</b>.{% endblocktrans %}</p>
@@ -34,20 +34,20 @@
         you will have <b>Expenses</b> (in points) indicated as a negative number (-).
         The <b>Expenses</b> are automatically deducted at the start of the period.{% endblocktrans %}</p>
 
-    <img id="graph" width="110" height="auto" src="{% static 'fig_instruct2a.png' %}"/>
+    <img id="graph1" width="110" height="auto"/>
     <br></br>
 
     <p>{% blocktrans %}The <b>Expenses</b> for each period are randomly drawn from an Expense Deck with 16 cards.
         Once an expense card is drawn it is removed from the deck.{% endblocktrans %}</p>
 
-    <img id="graph" width="100" height="auto" src="{% static 'fig_instruct2b.png' %}"/>
+    <img id="graph2" width="100" height="auto"/>
     <br></br>
 
     <p>{% blocktrans %}You can see expenses from the current and previous periods.
         The <b>Expenses</b> for future periods are indicated by “?”.
         They are only revealed at the beginning of each period.{% endblocktrans %}</p>
 
-    <img id="graph" width="100" height="auto" src="{% static 'fig_instruct2c.png' %}"/>
+    <img id="graph3" width="100" height="auto"/>
 </div>
 
 <div id="Spending" class="tabcontent">
@@ -97,6 +97,19 @@
 
     // Get the element with id="defaultOpen" and click on it
     // document.getElementById("defaultOpen").click();
+    var lang_chosen = {{ lang|json }};
+    if (lang_chosen === 'en') {
+        document.getElementById('graph').src = "{% static 'fig_instruct1.png' %}";
+        document.getElementById('graph1').src = "{% static 'fig_instruct2a.png' %}";
+        document.getElementById('graph2').src = "{% static 'fig_instruct2b.png' %}";
+        document.getElementById('graph3').src = "{% static 'fig_instruct2c.png' %}";
+    }
+    else if (lang_chosen === 'de') {
+        document.getElementById('graph').src = "{% static 'fig_instruct1_de.png' %}";
+        document.getElementById('graph1').src = "{% static 'fig_instruct2a_de.png' %}";
+        document.getElementById('graph2').src = "{% static 'fig_instruct2b_de.png' %}";
+        document.getElementById('graph3').src = "{% static 'fig_instruct2c_de.png' %}";
+    }
 </script>
 
 <style>

@@ -35,6 +35,7 @@ class Subsession(BaseSubsession):
         for player in self.get_players():
             player.participant.vars['start_text'] = _('Please tap and move on the slider below to indicate '
                                                       'how much you would like to spend in current Period')
+            player.participant.vars['start_title_retire'] = _('Retirement begins')
             player.participant.vars['start_text_retire'] = _('You have just entered retirement in this period.')
             player.participant.vars['spend_text'] = _('You have less Savings than you need '
                                                       'to cover your Expenses this turn. '

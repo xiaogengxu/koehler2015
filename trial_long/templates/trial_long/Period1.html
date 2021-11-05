@@ -505,7 +505,11 @@
 		</div>
 
 		<div id="menu">
-			<h1 style="font-size: 12.5px">{% blocktrans %}Expense Deck{% endblocktrans %}</h1>
+            {% if lang == 'en' %}
+                <h1>Expense Deck</h1>
+            {% elif lang == 'de' %}
+                <h1 style="font-size: 12.5px">{% blocktrans %}Expense Deck{% endblocktrans %}</h1>
+            {% endif %}
 			<div class="expenseCard" id="card1">-?</div>
 			<div class="expenseCard" id="card2">-?</div>
 			<div class="expenseCard" id="card3">-?</div>
