@@ -62,6 +62,7 @@ class Result(Page):
             bonus_time_num = total * 0.158
             total1_num = total + bonus_time_num
 
+        bonus_time = round(bonus_time_num, 2)
         total1 = round(total1_num, 2)
 
         return {
@@ -74,6 +75,7 @@ class Result(Page):
             'earn_invest': earn_invest,
             'total': total,
             'pay_time': pay_time,
+            'bonus_time': bonus_time,
             'total1': total1
         }
 
