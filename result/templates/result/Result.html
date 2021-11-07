@@ -14,7 +14,9 @@
     <p>{% blocktrans %}You have finished all activities.{% endblocktrans %}</p>
 
     <p>{% blocktrans %}For additional compensation, Period {{ reward_period }} of life {{ reward_life }} was chosen.
-        Your reward on that period was {{ reward_euro }} Euro.{% endblocktrans %}</p>
+        Your reward on that period was {{ reward_origin_euro }} Euro.{% endblocktrans %}
+        {% if in_debt == 1 %}{% blocktrans %}You went into debt on life {{ reward_life }},
+            therefore your reward is automatically zero.{% endblocktrans %}{% endif %}</p>
 
     <p>
         {% blocktrans %}You chose to invest {{ risk_choice }}% (or {{ invest }} Euro) in the risky investment.

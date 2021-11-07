@@ -45,6 +45,9 @@ class Subsession(BaseSubsession):
             for r in range(1, 3):
                 random.shuffle(expense_seq)
                 player.in_round(r).participant.vars['expense_list'] = expense_seq
+                str_debt = 'debt_r%s' % r
+                player.participant.vars[str_debt] = 0
+                player.participant.vars['in_debt'] = 0
                 for j in range(1, 17):
                     str_income = 'income%s' % j
                     str_expense = 'expense%s' % j

@@ -794,6 +794,9 @@ class Period13(Page):
             self.participant.vars['spend13'] = 0
         else:
             self.participant.vars['spend13'] = self.player.spend13
+        if self.participant.vars['total_saving13'] < 0:
+            str_debt = 'debt_r%s' % self.round_number
+            self.participant.vars[str_debt] = 1
         self.participant.vars['total_saving14'] = self.participant.vars['total_saving13'] + \
                                                       self.participant.vars['income13'] - \
                                                       self.player.expense13 - \
@@ -858,6 +861,9 @@ class Period14(Page):
             self.participant.vars['spend14'] = 0
         else:
             self.participant.vars['spend14'] = self.player.spend14
+        if self.participant.vars['total_saving14'] < 0:
+            str_debt = 'debt_r%s' % self.round_number
+            self.participant.vars[str_debt] = 1
         self.participant.vars['total_saving15'] = self.participant.vars['total_saving14'] + \
                                                       self.participant.vars['income14'] - \
                                                       self.player.expense14 - \
@@ -922,6 +928,9 @@ class Period15(Page):
             self.participant.vars['spend15'] = 0
         else:
             self.participant.vars['spend15'] = self.player.spend15
+        if self.participant.vars['total_saving15'] < 0:
+            str_debt = 'debt_r%s' % self.round_number
+            self.participant.vars[str_debt] = 1
         self.participant.vars['total_saving16'] = self.participant.vars['total_saving15'] + \
                                                       self.participant.vars['income15'] - \
                                                       self.player.expense15 - \
@@ -986,6 +995,10 @@ class Period16(Page):
             self.participant.vars['spend16'] = 0
         else:
             self.participant.vars['spend16'] = self.player.spend16
+        if self.participant.vars['total_saving16'] < 0:
+            str_debt = 'debt_r%s' % self.round_number
+            self.participant.vars[str_debt] = 1
+
 
 class End_short(Page):
     form_model = 'player'
@@ -1013,8 +1026,15 @@ class End_short(Page):
     def before_next_page(self):
         if self.participant.vars['reward_treat'] == 'short' and self.player.round_number == 2:
             reward_round = self.participant.vars['reward_round']
+            str_debt = 'debt_r%s' % reward_round
             str_reward = 'spend%s' % self.participant.vars['reward_period']
-            self.participant.vars['reward'] = getattr(self.player.in_round(reward_round), str_reward)
+            reward_num = getattr(self.player.in_round(reward_round), str_reward)
+            self.participant.vars['reward_origin'] = reward_num
+            if self.participant.vars[str_debt] == 1:
+                self.participant.vars['reward'] = 0
+                self.participant.vars['in_debt'] = 1
+            else:
+                self.participant.vars['reward'] = reward_num
 
 
 page_sequence = [Start, Start_to_S, Period1, Period2, Period3, Period4, Period5, Period6, Period7, Period8, Period9,

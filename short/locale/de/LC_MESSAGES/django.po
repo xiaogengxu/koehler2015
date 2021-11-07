@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-06 19:35+0200\n"
+"POT-Creation-Date: 2021-11-07 13:56+0200\n"
 "PO-Revision-Date: 2021-11-05 15:53+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -46,8 +46,8 @@ msgstr ""
 #: .\short\pages.py:210 .\short\pages.py:269 .\short\pages.py:328
 #: .\short\pages.py:387 .\short\pages.py:446 .\short\pages.py:505
 #: .\short\pages.py:564 .\short\pages.py:623 .\short\pages.py:682
-#: .\short\pages.py:741 .\short\pages.py:809 .\short\pages.py:873
-#: .\short\pages.py:937
+#: .\short\pages.py:741 .\short\pages.py:812 .\short\pages.py:879
+#: .\short\pages.py:946
 msgid "Please decide the amount you would like to spend."
 msgstr "Bitte entscheiden Sie, welchen Betrag Sie ausgeben möchten."
 

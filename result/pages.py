@@ -13,6 +13,8 @@ def get_timeout_seconds(player):
 
 class Result(Page):
     form_model = 'player'
+    form_fields = ['finished', 'total_payoff', 'total_time']
+    get_timeout_seconds = get_timeout_seconds
 
     def is_displayed(self):
         if self.participant.vars['time_instruction'] >= 30 and self.participant.vars['end'] == 0 and \
@@ -24,8 +26,11 @@ class Result(Page):
     def vars_for_template(self):
         reward_life = self.participant.vars['reward_life']
         reward_period = self.participant.vars['reward_period']
+        reward_origin = self.participant.vars['reward_origin']
+        reward_origin_euro = round(reward_origin / 14, 2)
         reward = self.participant.vars['reward']
         reward_euro = round(reward / 14, 2)
+        in_debt = self.participant.vars['in_debt']
         risk_choice = self.participant.vars['risk_choice']
         invest_num = reward_euro * self.participant.vars['risk_choice']
 
@@ -68,7 +73,9 @@ class Result(Page):
         return {
             'reward_life': reward_life,
             'reward_period': reward_period,
+            'reward_origin_euro': reward_origin_euro,
             'reward_euro': reward_euro,
+            'in_debt': in_debt,
             'risk_outcome': risk_outcome,
             'risk_choice': risk_choice,
             'invest': invest,
@@ -92,6 +99,8 @@ class Result(Page):
 
 class Result_nodelay(Page):
     form_model = 'player'
+    form_fields = ['finished', 'total_payoff', 'total_time']
+    get_timeout_seconds = get_timeout_seconds
 
     def is_displayed(self):
         if self.participant.vars['time_instruction'] >= 30 and self.participant.vars['end'] == 0 and \
@@ -103,8 +112,11 @@ class Result_nodelay(Page):
     def vars_for_template(self):
         reward_life = self.participant.vars['reward_life']
         reward_period = self.participant.vars['reward_period']
+        reward_origin = self.participant.vars['reward_origin']
+        reward_origin_euro = round(reward_origin / 14, 2)
         reward = self.participant.vars['reward']
         reward_euro = round(reward / 14, 2)
+        in_debt = self.participant.vars['in_debt']
         risk_choice = self.participant.vars['risk_choice']
         invest_num = reward_euro * self.participant.vars['risk_choice']
 
@@ -131,7 +143,9 @@ class Result_nodelay(Page):
         return {
             'reward_life': reward_life,
             'reward_period': reward_period,
+            'reward_origin_euro': reward_origin_euro,
             'reward_euro': reward_euro,
+            'in_debt': in_debt,
             'risk_outcome': risk_outcome,
             'risk_choice': risk_choice,
             'invest': invest,
