@@ -1023,12 +1023,13 @@ class Period16(Page):
         }
 
     def before_next_page(self):
-        if self.participant.vars['total_saving_long16'] <= 0:
+        if self.participant.vars['total_saving_long16'] <= self.player.expense_long16:
             self.participant.vars['spend_long16'] = 0
-            str_debt = 'debt_long_r%s' % self.round_number
-            self.participant.vars[str_debt] = 1
         else:
             self.participant.vars['spend_long16'] = self.player.spend_long16
+        if self.participant.vars['total_saving_long16'] < self.player.expense_long16:
+            str_debt = 'debt_long_r%s' % self.round_number
+            self.participant.vars[str_debt] = 1
 
 
 class End_long(Page):
