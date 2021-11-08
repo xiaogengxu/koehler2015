@@ -89,7 +89,7 @@ class End_attempt1(Page):
 
     def js_vars(self):
         username_value = self.participant.label
-        return dict(url='https://survey.maximiles.com/quality?p=73952&m='+username_value)
+        return dict(url='https://survey.maximiles.com/quality?p=73953&m='+username_value)
 
     def before_next_page(self):
         self.participant.vars['end'] = 1
@@ -231,7 +231,7 @@ class End_attempt2(Page):
 
     def js_vars(self):
         username_value = self.participant.label
-        return dict(url='https://survey.maximiles.com/quality?p=73952&m='+username_value)
+        return dict(url='https://survey.maximiles.com/quality?p=73953&m='+username_value)
 
     def before_next_page(self):
         self.participant.vars['end'] = 1
