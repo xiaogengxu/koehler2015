@@ -6,7 +6,7 @@ SESSION_CONFIGS = [
     {
         'name': 'Koehler2014',
         'display_name': 'Koehler2014',
-        'num_demo_participants': 100,
+        'num_demo_participants': 20,
         'app_sequence': ['instructions', 'trial_long', 'trial_short', 'quiz', 'long', 'short', 'post_survey', 'result'],
         'language': 'de',
     },
